@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Treatments | Dr. Mahaveer Mehta Medical Center, Dubai</title>
+<meta name="description" content="Explore clinical dermatology, laser treatments and aesthetic skin care at Dr. Mahaveer Mehta Medical Center in Dubai, including Pico Laser, CO2 Fractional Laser, RF Microneedling, Excimer Laser, laser hair reduction and more.">
+<style>
+:root{
+  --navy:#0b2142;--navy2:#143766;--navy3:#071a35;--gold:#b48a46;--gold2:#d2b274;
+  --ink:#0d1b2a;--muted:#69717d;--paper:#f7f7f5;--warm:#f0ece4;--white:#fff;
+  --line:#e6e6e2;--card:#fff;--max:1240px;--r:30px;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+
+/* NAV */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(247,247,245,.8);backdrop-filter:saturate(180%) blur(22px);border-bottom:1px solid rgba(13,27,42,.07)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:28px}.brand{display:flex;align-items:center;gap:12px;min-width:280px}.brand svg{width:42px;height:42px;flex:0 0 auto}.brand strong{font-family:Georgia,serif;font-size:20px;font-weight:500;color:var(--navy);display:block}.brand small{display:block;font-size:9px;letter-spacing:.24em;color:var(--gold);margin-top:3px}.links{display:flex;align-items:center;gap:30px;font-size:14px;color:#303846}.links a{padding:27px 0 24px;border-bottom:2px solid transparent}.links a.active{color:var(--navy);border-color:var(--gold)}.book{background:var(--navy);color:white;padding:13px 20px;border-radius:14px;font-size:14px;font-weight:650}.menu{display:none;border:0;background:none;font-size:25px;color:var(--navy)}
+
+/* HERO */
+.hero{padding:64px 0 42px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:42px;align-items:center}.kicker{font-size:12px;letter-spacing:.22em;text-transform:uppercase;font-weight:750;color:var(--gold)}h1{font-size:clamp(56px,7.1vw,104px);line-height:.91;letter-spacing:-.067em;margin:22px 0 28px;font-weight:650;color:#0c1b2d}.hero-copy{font-size:clamp(19px,2vw,28px);line-height:1.4;letter-spacing:-.02em;color:#505966;max-width:730px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.btn{padding:15px 22px;border-radius:14px;font-size:14px;font-weight:650;display:inline-flex;align-items:center;gap:9px}.btn.primary{background:var(--navy);color:white}.btn.secondary{background:white;border:1px solid var(--line);color:var(--navy)}
+.hero-media{height:670px;border-radius:38px;overflow:hidden;background:#e9edf3;position:relative;box-shadow:0 30px 90px rgba(11,33,66,.12)}.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center}.hero-media:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,26,53,0) 55%,rgba(7,26,53,.58) 100%)}.hero-badge{position:absolute;left:24px;right:24px;bottom:22px;z-index:2;padding:18px 20px;border-radius:18px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(16px);color:white}.hero-badge small{display:block;text-transform:uppercase;letter-spacing:.15em;font-size:10px;color:#ead39f}.hero-badge b{display:block;margin-top:7px;font-size:20px;letter-spacing:-.02em}
+.pills{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}.pill{padding:10px 13px;border-radius:999px;background:#fff;border:1px solid var(--line);font-size:12px;color:#475160}
+
+/* GLOBAL */
+section{padding:108px 0}.section-head{max-width:890px;margin-bottom:46px}.section-head h2{font-size:clamp(42px,5vw,72px);line-height:.98;letter-spacing:-.054em;margin:14px 0 18px;color:#0d1b2a}.section-head p{font-size:18px;line-height:1.7;color:var(--muted);max-width:780px}.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:750}.dark{background:var(--navy);color:white}.dark .section-head h2{color:white}.dark .section-head p{color:rgba(255,255,255,.68)}
+
+/* 3 PATHS */
+.paths{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.path{background:#fff;border:1px solid var(--line);border-radius:28px;padding:30px;min-height:300px;display:flex;flex-direction:column;justify-content:space-between;transition:.35s ease}.path:hover{transform:translateY(-5px);box-shadow:0 24px 60px rgba(11,33,66,.09)}.path-icon{width:48px;height:48px;border-radius:15px;background:#f4efe6;display:grid;place-items:center;color:var(--gold)}.path h3{font-size:30px;line-height:1.04;letter-spacing:-.04em;margin:25px 0 12px;color:var(--navy)}.path p{font-size:15px;line-height:1.65;color:var(--muted);margin:0}.path-link{font-size:13px;font-weight:700;color:var(--navy);margin-top:28px}
+
+/* FEATURED TREATMENTS */
+.treatment-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.t-card{background:white;border:1px solid rgba(13,27,42,.06);border-radius:32px;overflow:hidden;grid-column:span 6;min-height:560px;display:flex;flex-direction:column}.t-card.wide{grid-column:span 12;display:grid;grid-template-columns:1.08fr .92fr;min-height:520px}.t-media{height:300px;background:#edf1f5;overflow:hidden;position:relative}.wide .t-media{height:100%;min-height:520px}.t-media img{width:100%;height:100%;object-fit:cover;object-position:center}.t-card.contain .t-media img{object-fit:contain;background:#eef2f6;padding:18px}.t-copy{padding:30px;display:flex;flex-direction:column;flex:1}.t-copy h3{font-size:34px;line-height:1.03;letter-spacing:-.043em;margin:10px 0 12px;color:var(--navy)}.t-copy p{font-size:15px;line-height:1.7;color:var(--muted);margin:0}.uses{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}.use{font-size:11px;border:1px solid var(--line);background:#fafafa;padding:8px 10px;border-radius:999px;color:#5a6370}.learn{margin-top:auto;padding-top:25px;font-size:13px;color:var(--navy);font-weight:700}
+
+/* CLINICAL LIST */
+.clinical{background:#fff}.clinical-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.condition{border:1px solid var(--line);border-radius:22px;padding:23px;background:#fbfbfa;min-height:170px}.condition span{font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);font-weight:750}.condition h4{font-size:20px;letter-spacing:-.025em;color:var(--navy);margin:10px 0 8px}.condition p{font-size:13px;line-height:1.6;color:var(--muted);margin:0}
+
+/* TECHNOLOGY */
+.tech-shell{display:grid;grid-template-columns:.92fr 1.08fr;gap:22px;align-items:stretch}.tech-visual{min-height:620px;border-radius:34px;overflow:hidden;background:linear-gradient(145deg,#0d294f,#173f75);position:relative;padding:38px;color:white}.tech-orb{position:absolute;width:380px;height:380px;border-radius:50%;right:-70px;top:-60px;background:radial-gradient(circle at 38% 34%,rgba(255,255,255,.33),rgba(255,255,255,.05) 38%,transparent 68%);filter:blur(1px)}.machine{position:absolute;left:50%;top:53%;transform:translate(-50%,-50%);width:250px;height:390px;border-radius:32px;background:linear-gradient(180deg,#f7f7f7,#cfd7df);box-shadow:0 25px 65px rgba(0,0,0,.3)}.screen{position:absolute;left:36px;right:36px;top:45px;height:110px;border-radius:16px;background:#88a8c8;border:8px solid #edf1f4}.arm{position:absolute;width:210px;height:18px;background:#d4dde5;right:-155px;top:185px;border-radius:20px;transform:rotate(19deg);transform-origin:left center}.tip{position:absolute;width:38px;height:38px;border-radius:50%;right:-175px;top:243px;background:#d2b274;box-shadow:0 0 25px rgba(210,178,116,.8)}.tech-label{position:absolute;left:34px;bottom:34px;right:34px}.tech-label small{letter-spacing:.17em;color:#d9be88;font-size:10px}.tech-label b{display:block;font-size:30px;line-height:1.02;margin-top:8px;letter-spacing:-.04em}.tech-list{display:grid;gap:12px}.tech-item{background:#143766;border:1px solid rgba(255,255,255,.09);border-radius:22px;padding:22px 24px;display:grid;grid-template-columns:64px 1fr;gap:18px;align-items:start}.tech-num{font-size:12px;letter-spacing:.15em;color:var(--gold2);padding-top:5px}.tech-item h3{margin:0;color:white;font-size:21px;letter-spacing:-.02em}.tech-item p{margin:8px 0 0;color:rgba(255,255,255,.62);font-size:13px;line-height:1.6}
+
+/* PATIENT JOURNEY */
+.journey{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.step{padding:26px;border-radius:24px;background:white;border:1px solid var(--line);min-height:210px}.step b{font-size:34px;color:var(--gold);letter-spacing:-.04em}.step h3{font-size:20px;margin:18px 0 9px;color:var(--navy)}.step p{font-size:13px;line-height:1.6;color:var(--muted);margin:0}
+
+/* NOTE */
+.note{background:#f0ece4}.note-box{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}.note-panel{background:#fff;border:1px solid var(--line);border-radius:28px;padding:34px}.note-panel h3{font-size:31px;letter-spacing:-.04em;color:var(--navy);margin:10px 0 14px}.note-panel p{margin:0;color:var(--muted);line-height:1.7;font-size:15px}.note-list{margin:18px 0 0;padding:0;list-style:none}.note-list li{padding:13px 0;border-top:1px solid var(--line);font-size:13px;color:#515b67}.note-list li:before{content:"•";color:var(--gold);margin-right:9px}
+
+/* CTA FOOTER */
+.cta{padding:112px 0;text-align:center;background:linear-gradient(180deg,#f7f7f5,#ece8df)}.cta h2{font-size:clamp(48px,6vw,82px);letter-spacing:-.055em;line-height:.96;margin:14px auto 20px;max-width:900px}.cta p{font-size:19px;line-height:1.6;color:var(--muted);max-width:680px;margin:0 auto 30px}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}footer{background:var(--navy3);color:rgba(255,255,255,.65);padding:46px 0}.foot{display:flex;justify-content:space-between;gap:30px;align-items:flex-end}.foot strong{color:white;font-family:Georgia,serif;font-size:19px}.foot p{margin:7px 0 0;font-size:12px;line-height:1.7}.source{font-size:11px;text-align:right;max-width:540px;line-height:1.65}
+
+.reveal{opacity:0;transform:translateY(24px);transition:.7s cubic-bezier(.2,.7,.2,1)}.reveal.show{opacity:1;transform:none}
+@media(max-width:980px){.links,.book{display:none}.menu{display:block}.brand{min-width:0}.hero-grid,.tech-shell,.note-box{grid-template-columns:1fr}.hero-media{height:560px}.paths{grid-template-columns:1fr}.t-card,.t-card.wide{grid-column:span 12;display:flex}.wide .t-media{height:340px;min-height:0}.clinical-grid{grid-template-columns:1fr 1fr}.journey{grid-template-columns:1fr 1fr}.foot{align-items:flex-start;flex-direction:column}.source{text-align:left}.tech-visual{min-height:520px}}
+@media(max-width:620px){.wrap{width:min(100% - 28px,var(--max))}.nav{height:68px}.brand strong{font-size:16px}.brand small{display:none}.hero{padding-top:42px}.hero-grid{gap:28px}h1{font-size:54px}.hero-copy{font-size:18px}.hero-media{height:450px;border-radius:26px}section{padding:82px 0}.section-head h2{font-size:45px}.clinical-grid,.journey{grid-template-columns:1fr}.t-card{border-radius:24px;min-height:auto}.t-media,.wide .t-media{height:260px}.t-copy{padding:23px}.t-copy h3{font-size:29px}.tech-visual{min-height:450px}.machine{transform:translate(-50%,-50%) scale(.82)}.note-panel{padding:26px}}
+
+/* Consistent navigation to all eight standalone pages. */
+.topbar .nav { gap:20px; }
+.topbar .links { gap:16px; font-size:13px; }
+.topbar .links a, .topbar .book, .topbar .nav-cta { white-space:nowrap; }
+.topbar .brand { min-width:0; flex-shrink:0; }
+.topbar .menu { display:none; background:none; border:0; color:var(--navy); min-width:44px; min-height:44px; align-items:center; justify-content:center; cursor:pointer; }
+.topbar .menu svg { width:24px; height:24px; }
+@media(max-width:1399px) {
+  .topbar .nav { position:relative; }
+  .topbar .links, .topbar .book, .topbar .nav-cta { display:none; }
+  .topbar .menu { display:flex; }
+  .topbar .links.is-open { display:flex; position:absolute; top:100%; right:0; left:0; flex-direction:column; align-items:stretch; gap:0; padding:12px 20px; max-height:calc(100dvh - 90px); overflow-y:auto; background:#FCFBF8; border:1px solid #E7E0D5; z-index:1000; }
+  .topbar .links.is-open a { padding:12px 0; font-size:15px; }
+}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="wrap nav">
+  <a class="brand" href="index.html" aria-label="Dr. Mahaveer Mehta Medical Center home">
+    <svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 6C24 6 16 14 16 22C16 26.4 19.6 30 24 30C28.4 30 32 26.4 32 22C32 14 24 6 24 6Z" stroke="#B48A46" stroke-width="1.5"/><path d="M24 30V42" stroke="#B48A46" stroke-width="1.5"/><path d="M10 24C10 24 12 32 24 32C36 32 38 24 38 24" stroke="#B48A46" stroke-width="1.5"/></svg>
+    <span><strong>Dr. Mahaveer Mehta</strong><small>MEDICAL CENTER · DUBAI</small></span>
+  </a>
+  <nav class="links" id="page-navigation" aria-label="Primary"><a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="treatments.html" class="active" aria-current="page">Treatments</a>
+<a href="technology.html">Technology</a>
+<a href="awards.html">Awards</a>
+<a href="media-research.html">Media &amp; Research</a>
+<a href="clinic.html">Clinic</a>
+<a href="contact.html">Contact</a></nav>
+  <a class="book" href="contact.html">Book an Appointment</a>
+<button class="menu" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="page-navigation"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.5"/></svg></button></div></header>
+
+<main id="top">
+<section class="hero"><div class="wrap hero-grid">
+  <div class="reveal">
+    <div class="kicker">Treatments · Dr. Mahaveer Mehta Medical Center</div>
+    <h1>Advanced care.<br>Chosen for<br>your skin.</h1>
+    <p class="hero-copy">Clinical dermatology, laser medicine and aesthetic skin care brought together with decades of experience and a treatment plan selected around the individual patient.</p>
+    <div class="pills"><span class="pill">Clinical Dermatology</span><span class="pill">Laser Treatments</span><span class="pill">Pigmentation</span><span class="pill">Acne & Scars</span><span class="pill">Hair & Skin Health</span></div>
+    <div class="hero-actions"><a class="btn primary" href="#signature">Explore Treatments</a><a class="btn secondary" href="contact.html">Book Consultation</a></div>
+  </div>
+  <div class="hero-media reveal">
+    <img src="images/m4.jpg" alt="Laser dermatology treatment at Dr. Mahaveer Mehta Medical Center">
+    <div class="hero-badge"><small>Personalized treatment planning</small><b>Technology guided by clinical judgment.</b></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="section-head reveal"><div class="kicker">Three care pathways</div><h2>Start with the concern.<br>Not the machine.</h2><p>The clinic’s services span medical dermatology, advanced laser procedures and aesthetic skin care. The exact approach depends on diagnosis, skin type, treatment goals and suitability.</p></div>
+  <div class="paths">
+    <article class="path reveal"><div><div class="path-icon">✦</div><h3>Clinical Dermatology</h3><p>Assessment and treatment for acne, rosacea, eczema, psoriasis, vitiligo, moles, warts, skin tags, hair loss and skin cancer concerns.</p></div><a class="path-link" href="#clinical">Explore conditions →</a></article>
+    <article class="path reveal"><div><div class="path-icon">◎</div><h3>Laser Dermatology</h3><p>Pico, fractional CO₂, vascular, Excimer and other energy-based systems selected for pigmentation, scars, texture, vascular conditions and rejuvenation.</p></div><a class="path-link" href="#signature">Explore laser care →</a></article>
+    <article class="path reveal"><div><div class="path-icon">◇</div><h3>Aesthetic Skin Care</h3><p>Non-surgical approaches for skin texture, tightening, pigmentation, pores and rejuvenation, with options tailored to the individual patient.</p></div><a class="path-link" href="#technology">See technology →</a></article>
+  </div>
+</div></section>
+
+<section id="signature" style="background:#eceff2"><div class="wrap">
+  <div class="section-head reveal"><div class="kicker">Signature treatments</div><h2>Precision where<br>it matters most.</h2><p>A curated view of the clinic’s most established laser and dermatology capabilities.</p></div>
+  <div class="treatment-grid">
+    <article class="t-card wide reveal"><div class="t-media"><img src="images/m5.jpg" alt="Pico laser and skin treatment imagery"></div><div class="t-copy"><span class="eyebrow">Pigmentation · Tattoo · Rejuvenation</span><h3>Pico Laser</h3><p>Ultra-short pulse laser treatment used by the clinic for multiple pigmentation concerns, selected tattoos, post-acne scarring and non-ablative rejuvenation. The official Pico Laser page lists 532, 585, 650 and 1064 nm wavelengths.</p><div class="uses"><span class="use">Melasma</span><span class="use">Freckles</span><span class="use">Age Spots</span><span class="use">Tattoo Removal</span><span class="use">Post-Acne Marks</span></div><a class="learn" href="https://skinlaserdubai.com/Pico-Laser.php" target="_blank" rel="noopener">Official Pico Laser details →</a></div></article>
+
+    <article class="t-card reveal"><div class="t-media"><img src="images/m4.jpg" alt="Fractional laser dermatology procedure"></div><div class="t-copy"><span class="eyebrow">Scars · Texture · Tightening</span><h3>CO₂ Fractional Laser</h3><p>Fractional resurfacing used for post-acne scars, wrinkles, sun-damaged skin, stretch marks and texture irregularities. The clinic describes the treatment as stimulating new collagen while leaving areas of untreated skin between micro-treatment zones.</p><div class="uses"><span class="use">Acne Scars</span><span class="use">Texture</span><span class="use">Wrinkles</span><span class="use">Stretch Marks</span></div><a class="learn" href="https://skinlaserdubai.com/CO2-Fractional-Laser.php" target="_blank" rel="noopener">Official CO₂ details →</a></div></article>
+
+    <article class="t-card reveal"><div class="t-media"><img src="images/m2.jpg" alt="Clinical dermatology care"></div><div class="t-copy"><span class="eyebrow">Texture · Pores · Rejuvenation</span><h3>RF Fractional Microneedling</h3><p>An energy-based treatment listed among the clinic’s diagnostic and treatment capabilities, used within individualized plans for texture, pores, scarring and skin quality concerns.</p><div class="uses"><span class="use">Open Pores</span><span class="use">Texture</span><span class="use">Scars</span><span class="use">Skin Quality</span></div><a class="learn" href="contact.html">Ask about suitability →</a></div></article>
+
+    <article class="t-card reveal"><div class="t-media"><img src="images/s1.jpg" alt="Dermatology treatment result imagery"></div><div class="t-copy"><span class="eyebrow">Vitiligo · Psoriasis</span><h3>Excimer Laser 308nm</h3><p>The clinic lists Excimer Laser treatment for vitiligo and psoriasis as part of its dermatology capabilities, with treatment decisions based on diagnosis and individual assessment.</p><div class="uses"><span class="use">Vitiligo</span><span class="use">Psoriasis</span><span class="use">Targeted Treatment</span></div><a class="learn" href="contact.html">Discuss your condition →</a></div></article>
+
+    <article class="t-card reveal"><div class="t-media"><img src="images/s2.jpg" alt="Laser hair reduction treatment imagery"></div><div class="t-copy"><span class="eyebrow">Hair Reduction · Multiple Skin Types</span><h3>Laser Hair Reduction</h3><p>The clinic describes using several laser and light platforms, including diode, 1064 nm Nd:YAG, IPL and ProWave systems, to match different skin tones and hair characteristics.</p><div class="uses"><span class="use">Face</span><span class="use">Body</span><span class="use">Fine Hair</span><span class="use">Coarse Hair</span></div><a class="learn" href="https://skinlaserdubai.com/Laser-Hair-Removal.php" target="_blank" rel="noopener">Official hair reduction details →</a></div></article>
+
+    <article class="t-card reveal"><div class="t-media"><img src="images/053-Cityrvcopy_1571897835.jpg" alt="Dr. Mahaveer Mehta Medical Center location in Dubai"></div><div class="t-copy"><span class="eyebrow">Medical Dermatology</span><h3>Skin Cancer Screening & Mole Checks</h3><p>The clinic emphasizes prevention, early diagnosis and prompt treatment, and lists mole assessment and skin cancer screening among its dermatology services.</p><div class="uses"><span class="use">Mole Checks</span><span class="use">Melanoma Awareness</span><span class="use">Early Detection</span></div><a class="learn" href="contact.html">Book a skin check →</a></div></article>
+  </div>
+</div></section>
+
+<section id="clinical" class="clinical"><div class="wrap">
+  <div class="section-head reveal"><div class="kicker">Clinical dermatology</div><h2>Care for everyday<br>and complex concerns.</h2><p>Conditions listed across Dr. Mehta’s official service pages include the following. A consultation is needed to determine diagnosis and treatment suitability.</p></div>
+  <div class="clinical-grid">
+    <article class="condition reveal"><span>01</span><h4>Acne & Scarring</h4><p>Medical acne care with options for post-acne scars, pigmentation and enlarged pores.</p></article>
+    <article class="condition reveal"><span>02</span><h4>Pigmentation & Melasma</h4><p>Assessment for melasma, sun spots, post-inflammatory pigmentation and other pigment concerns.</p></article>
+    <article class="condition reveal"><span>03</span><h4>Rosacea</h4><p>The clinic lists Laser Genesis, Lime Light and RF microneedling among approaches used for rosacea.</p></article>
+    <article class="condition reveal"><span>04</span><h4>Vitiligo</h4><p>Targeted Excimer Laser 308nm is listed by the clinic as a treatment option for depigmentation.</p></article>
+    <article class="condition reveal"><span>05</span><h4>Eczema & Psoriasis</h4><p>Dermatologic assessment and treatment plans for chronic inflammatory skin conditions.</p></article>
+    <article class="condition reveal"><span>06</span><h4>Warts & Skin Tags</h4><p>Laser and dermatologic removal options are listed for selected benign skin growths.</p></article>
+    <article class="condition reveal"><span>07</span><h4>Syringoma & Xanthelasma</h4><p>Specialized assessment for common eyelid and periocular skin lesions.</p></article>
+    <article class="condition reveal"><span>08</span><h4>Spider Veins</h4><p>Vascular laser treatment is listed for visible superficial blood vessels.</p></article>
+    <article class="condition reveal"><span>09</span><h4>Dark Circles</h4><p>Individualized dermatology assessment with treatment selected according to the underlying cause.</p></article>
+    <article class="condition reveal"><span>10</span><h4>Hair Loss</h4><p>The clinic describes a structured multi-step approach intended to support hair growth and thickness.</p></article>
+    <article class="condition reveal"><span>11</span><h4>Large Open Pores</h4><p>Pico Laser, RF microneedling and Laser Genesis are among modalities listed by the clinic.</p></article>
+    <article class="condition reveal"><span>12</span><h4>Moles & Skin Cancer</h4><p>Mole checks and early detection of melanoma and other skin cancers form part of clinical dermatology care.</p></article>
+  </div>
+</div></section>
+
+<section id="technology" class="dark"><div class="wrap">
+  <div class="section-head reveal"><div class="kicker" style="color:#d2b274">Technology matching</div><h2>Different technology.<br>Different purpose.</h2><p>The clinic lists a wide range of laser and energy-based systems. Rather than presenting one device as the answer to every concern, the page groups them by the kinds of problems they are used to address.</p></div>
+  <div class="tech-shell">
+    <div class="tech-visual reveal"><div class="tech-orb"></div><div class="machine"><div class="screen"></div><div class="arm"></div><div class="tip"></div></div><div class="tech-label"><small>ADVANCED DERMATOLOGY TECHNOLOGY</small><b>Precision guided by experience.</b></div></div>
+    <div class="tech-list">
+      <article class="tech-item reveal"><div class="tech-num">01</div><div><h3>Pico Laser</h3><p>Pigmentation, selected tattoos, post-acne concerns and non-ablative rejuvenation.</p></div></article>
+      <article class="tech-item reveal"><div class="tech-num">02</div><div><h3>CO₂ Fractional Laser</h3><p>Post-acne scarring, texture, wrinkles, sun damage and selected stretch marks.</p></div></article>
+      <article class="tech-item reveal"><div class="tech-num">03</div><div><h3>RF Fractional Microneedling</h3><p>Texture, pores, scars and skin quality within personalized treatment plans.</p></div></article>
+      <article class="tech-item reveal"><div class="tech-num">04</div><div><h3>Excimer 308nm</h3><p>Targeted treatment listed for vitiligo and psoriasis.</p></div></article>
+      <article class="tech-item reveal"><div class="tech-num">05</div><div><h3>Vascular / Nd:YAG Systems</h3><p>Visible vessels, selected vascular concerns and certain hair-reduction indications.</p></div></article>
+      <article class="tech-item reveal"><div class="tech-num">06</div><div><h3>IPL · Lime Light · Laser Genesis</h3><p>Used across selected redness, pigmentation and rejuvenation concerns according to assessment.</p></div></article>
+    </div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="section-head reveal"><div class="kicker">Your treatment journey</div><h2>Consult first.<br>Treat second.</h2><p>A clean patient journey keeps technology in the right place: after assessment, not before it.</p></div>
+  <div class="journey">
+    <article class="step reveal"><b>01</b><h3>Consultation</h3><p>Discuss the skin concern, medical history, previous treatments and goals.</p></article>
+    <article class="step reveal"><b>02</b><h3>Assessment</h3><p>Determine diagnosis, skin type, suitability and any precautions relevant to treatment.</p></article>
+    <article class="step reveal"><b>03</b><h3>Personalized Plan</h3><p>Select the most appropriate treatment, technology or combination for the individual case.</p></article>
+    <article class="step reveal"><b>04</b><h3>Follow-up</h3><p>Review progress and adjust care according to response and clinical need.</p></article>
+  </div>
+</div></section>
+
+<section class="note"><div class="wrap note-box">
+  <div class="note-panel reveal"><span class="eyebrow">Important</span><h3>Results vary from patient to patient.</h3><p>Medical and cosmetic outcomes depend on diagnosis, skin type, treatment parameters, previous procedures and many individual factors. The page is designed to explain available services, not to promise a specific result.</p></div>
+  <div class="note-panel reveal"><span class="eyebrow">Before booking</span><h3>Bring context to your consultation.</h3><ul class="note-list"><li>Previous dermatology diagnoses or prescriptions</li><li>Past laser or aesthetic procedures</li><li>Current medications and relevant medical history</li><li>Photos showing progression, when useful</li></ul></div>
+</div></section>
+
+<section class="cta" id="contact"><div class="wrap reveal"><div class="kicker">Dr. Mahaveer Mehta Medical Center · Dubai</div><h2>Start with the right conversation.</h2><p>Contact the clinic to discuss your skin concern and arrange a consultation with Dr. Mahaveer Mehta’s medical center in Dubai.</p><div class="actions"><a class="btn primary" href="tel:+97142282444">Call +971 4 228 2444</a><a class="btn secondary" href="https://wa.me/971508446333" target="_blank" rel="noopener">WhatsApp +971 50 844 6333</a></div></div></section>
+</main>
+
+<footer><div class="wrap foot"><div><strong>Dr. Mahaveer Mehta Medical Center</strong><p>641-B, Al Ghurair Centre, Dubai, United Arab Emirates<br>drmmehta@emirates.net.ae</p></div><div class="source">Treatment names and descriptions are based on Dr. Mahaveer Mehta’s official clinic website. This page is an informational website design and does not replace a medical consultation.</div></div></footer>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.1,rootMargin:'0px 0px -50px 0px'});document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+<script>
+(function(){
+ var button=document.querySelector('.topbar .menu'), menu=document.getElementById('page-navigation');
+ if(!button||!menu)return;
+ function close(){menu.classList.remove('is-open');button.setAttribute('aria-expanded','false');}
+ button.addEventListener('click',function(){var open=menu.classList.toggle('is-open');button.setAttribute('aria-expanded',String(open));});
+ menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape'){close();button.focus();}});
+ document.addEventListener('click',function(e){if(!menu.contains(e.target)&&!button.contains(e.target))close();});
+ window.addEventListener('resize',function(){if(window.innerWidth>1399)close();});
+})();
+</script>
+</body>
+</html>

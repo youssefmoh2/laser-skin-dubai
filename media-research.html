@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Media & Research | Dr. Mahaveer Mehta Medical Center</title>
+<meta name="description" content="Research, publications, international conference leadership, editorial appointments and mentorship of Dr. Mahaveer Mehta, dermatologist in Dubai.">
+<style>
+:root{
+  --navy:#0a1f3e;--navy2:#133762;--navy3:#071a35;--ink:#0d1a2b;--gold:#b58a45;--gold2:#d4b577;
+  --paper:#f7f7f5;--warm:#efebe4;--white:#fff;--line:#e5e4df;--muted:#69727f;
+  --max:1240px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Segoe UI",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden
+}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+
+/* NAV */
+.topbar{
+  position:sticky;top:0;z-index:100;background:rgba(247,247,245,.82);
+  backdrop-filter:saturate(180%) blur(24px);border-bottom:1px solid rgba(10,31,62,.07)
+}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.brand{display:flex;align-items:center;gap:12px;min-width:280px}
+.brand svg{width:42px;height:42px}
+.brand strong{display:block;font-family:Georgia,serif;font-size:20px;font-weight:500;color:var(--navy)}
+.brand small{display:block;font-size:9px;letter-spacing:.22em;color:var(--gold);margin-top:3px}
+.links{display:flex;gap:27px;align-items:center;font-size:14px;color:#333d4a}
+.links a{padding:28px 0 24px;border-bottom:2px solid transparent}
+.links a.active{color:var(--navy);border-color:var(--gold)}
+.book{background:var(--navy);color:#fff;padding:13px 20px;border-radius:14px;font-size:14px;font-weight:700}
+
+/* HERO */
+.hero{padding:84px 0 58px}
+.hero-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:48px;align-items:center}
+.kicker{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:800}
+h1{
+  margin:22px 0 28px;font-size:clamp(58px,7vw,104px);line-height:.95;
+  letter-spacing:-.064em;font-weight:650
+}
+.hero-copy{
+  font-size:clamp(18px,2vw,27px);line-height:1.5;letter-spacing:-.02em;
+  color:#55606e;max-width:720px;margin:0
+}
+.hero-visual{
+  height:680px;border-radius:40px;overflow:hidden;position:relative;
+  background:linear-gradient(145deg,#071a35,#123662 55%,#1c4d82);
+  box-shadow:0 38px 100px rgba(10,31,62,.16)
+}
+.hero-visual:before{
+  content:"";position:absolute;inset:0;background:
+  radial-gradient(circle at 75% 18%,rgba(212,181,119,.28),transparent 24%),
+  linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:auto,42px 42px,42px 42px
+}
+.paper{
+  position:absolute;left:50%;top:48%;transform:translate(-50%,-50%) rotate(-5deg);
+  width:350px;height:440px;border-radius:22px;background:#f7f7f4;
+  box-shadow:0 38px 90px rgba(0,0,0,.30);padding:34px
+}
+.paper:before{
+  content:"";display:block;width:68%;height:20px;border-radius:6px;background:#b58a45;margin-bottom:26px
+}
+.paper .line{height:8px;background:#cbd0d5;border-radius:5px;margin:14px 0}
+.paper .line.s{width:68%}.paper .line.m{width:84%}
+.paper .chart{
+  margin-top:32px;height:132px;border-radius:16px;background:
+  linear-gradient(180deg,transparent 60%,rgba(10,31,62,.08)),
+  linear-gradient(90deg,transparent 49%,rgba(10,31,62,.08) 50%,transparent 51%);
+  position:relative;border:1px solid #e3e4e6
+}
+.paper .chart:after{
+  content:"";position:absolute;left:22px;right:22px;bottom:24px;height:58px;
+  border-bottom:3px solid #b58a45;border-right:3px solid #b58a45;
+  transform:skewY(-8deg)
+}
+.mic{
+  position:absolute;right:70px;bottom:100px;width:36px;height:160px;border-radius:18px;
+  background:linear-gradient(180deg,#d7dde3,#8e9ba8);transform:rotate(13deg)
+}
+.mic:before{
+  content:"";position:absolute;width:64px;height:64px;border-radius:50%;top:-35px;left:-14px;
+  background:radial-gradient(circle at 35% 35%,#d7b875,#b58a45 52%,#7d5b28)
+}
+.hero-chip{
+  position:absolute;z-index:3;left:24px;right:24px;bottom:22px;padding:18px 20px;border-radius:20px;
+  color:white;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(18px)
+}
+.hero-chip small{display:block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#ecd29e}
+.hero-chip b{display:block;margin-top:7px;font-size:21px;letter-spacing:-.02em}
+
+/* SHARED */
+section{padding:106px 0}
+.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:800}
+.section-head{max-width:900px;margin-bottom:48px}
+.section-head h2{
+  font-size:clamp(44px,5.3vw,78px);line-height:.98;letter-spacing:-.058em;margin:14px 0 18px
+}
+.section-head p{font-size:18px;line-height:1.72;color:var(--muted);max-width:800px;margin:0}
+.dark{background:var(--navy);color:#fff}
+.dark .section-head h2{color:#fff}.dark .section-head p{color:rgba(255,255,255,.68)}
+
+/* METRICS */
+.metrics{padding:24px 0 0}
+.metric-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.metric{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px}
+.metric strong{display:block;font-size:38px;color:var(--navy);letter-spacing:-.05em}
+.metric span{display:block;margin-top:7px;font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:#7c8490}
+
+/* RESEARCH */
+.research-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:20px}
+.research-main{
+  min-height:540px;border-radius:34px;padding:42px;background:#fff;border:1px solid var(--line);
+  display:flex;flex-direction:column;justify-content:space-between
+}
+.research-main h3{
+  font-size:clamp(45px,5vw,72px);line-height:.95;letter-spacing:-.055em;color:var(--navy);
+  margin:12px 0 20px
+}
+.research-main p{font-size:16px;line-height:1.75;color:var(--muted);max-width:690px;margin:0}
+.research-mark{
+  margin-top:38px;border-radius:26px;padding:26px;
+  background:linear-gradient(145deg,#0a1f3e,#16416f);color:#fff
+}
+.research-mark strong{font-size:62px;letter-spacing:-.06em}
+.research-mark span{display:block;margin-top:4px;color:rgba(255,255,255,.66);font-size:12px;letter-spacing:.12em;text-transform:uppercase}
+
+.research-side{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.mini-card{
+  background:#fff;border:1px solid var(--line);border-radius:26px;padding:26px;min-height:258px;
+  display:flex;flex-direction:column
+}
+.mini-card .num{font-size:12px;color:var(--gold);font-weight:800;letter-spacing:.15em}
+.mini-card h4{font-size:25px;line-height:1.03;letter-spacing:-.04em;color:var(--navy);margin:24px 0 10px}
+.mini-card p{font-size:13px;line-height:1.65;color:var(--muted);margin:0}
+.mini-card .meta{margin-top:auto;padding-top:18px;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#8a929c}
+
+/* CONFERENCES */
+.conference-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.conf{
+  grid-column:span 6;border-radius:30px;overflow:hidden;background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.11)
+}
+.conf.wide{grid-column:span 12;display:grid;grid-template-columns:1.05fr .95fr}
+.conf-media{height:320px;background:#e8edf3;padding:14px}
+.conf.wide .conf-media{height:420px}
+.conf-media img{width:100%;height:100%;object-fit:contain;object-position:center;background:#e8edf3;border-radius:20px}
+.conf-copy{padding:28px}
+.conf-copy small{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold2);font-weight:800}
+.conf-copy h3{font-size:31px;line-height:1.04;letter-spacing:-.04em;margin:10px 0 12px;color:white}
+.conf-copy p{font-size:14px;line-height:1.7;color:rgba(255,255,255,.67);margin:0}
+
+/* MENTORSHIP */
+.mentor{background:var(--warm)}
+.mentor-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:22px}
+.mentor-visual{
+  min-height:560px;border-radius:34px;position:relative;overflow:hidden;
+  background:linear-gradient(145deg,#081b37,#103966 55%,#1b4b7d)
+}
+.mentor-visual:before{
+  content:"";position:absolute;width:410px;height:410px;border-radius:50%;
+  left:50%;top:44%;transform:translate(-50%,-50%);border:1px solid rgba(255,255,255,.16)
+}
+.mentor-visual:after{
+  content:"ASDS";position:absolute;left:50%;top:44%;transform:translate(-50%,-50%);
+  font-family:Georgia,serif;font-size:78px;color:#d4b577;letter-spacing:-.04em
+}
+.mentor-caption{position:absolute;left:34px;right:34px;bottom:32px;color:#fff}
+.mentor-caption small{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#d8bd87}
+.mentor-caption b{display:block;font-size:32px;line-height:1.05;letter-spacing:-.04em;margin-top:8px}
+.mentor-copy{display:flex;flex-direction:column;gap:14px}
+.mentor-card{background:#fff;border:1px solid #ddd8cf;border-radius:28px;padding:30px}
+.mentor-card h3{font-size:30px;letter-spacing:-.04em;color:var(--navy);margin:10px 0 12px}
+.mentor-card p{font-size:14px;line-height:1.7;color:var(--muted);margin:0}
+.mentor-card ul{margin:18px 0 0;padding:0;list-style:none}
+.mentor-card li{font-size:13px;color:#5c6672;padding:12px 0;border-top:1px solid var(--line)}
+.mentor-card li:before{content:"•";color:var(--gold);margin-right:9px}
+
+/* EDITORIAL */
+.editorial{background:#fff}
+.editorial-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.journal{
+  border:1px solid var(--line);background:#fafaf8;border-radius:22px;padding:22px;min-height:180px
+}
+.journal span{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:800}
+.journal h3{font-size:18px;line-height:1.35;color:var(--navy);margin:12px 0 0}
+.journal p{font-size:12px;line-height:1.55;color:var(--muted);margin:9px 0 0}
+
+/* PUBLICATIONS NOTICE */
+.pub-box{
+  border-radius:32px;background:linear-gradient(145deg,#fff,#f1f0ec);border:1px solid var(--line);
+  padding:40px;display:grid;grid-template-columns:.78fr 1.22fr;gap:40px;align-items:center
+}
+.pub-big{font-size:100px;line-height:.8;letter-spacing:-.07em;color:var(--navy);font-weight:700}
+.pub-big small{display:block;font-size:11px;letter-spacing:.17em;text-transform:uppercase;color:var(--gold);margin-top:28px}
+.pub-copy h3{font-size:34px;letter-spacing:-.045em;color:var(--navy);margin:0 0 14px}
+.pub-copy p{font-size:15px;line-height:1.72;color:var(--muted);margin:0}
+.pub-note{margin-top:16px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:#7b838d}
+
+/* PHILANTHROPY / MEDIA */
+.media-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.media-card{
+  border-radius:28px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.11);
+  padding:28px;min-height:270px
+}
+.media-card .icon{font-size:29px;color:var(--gold2)}
+.media-card h3{font-size:24px;line-height:1.08;letter-spacing:-.035em;color:#fff;margin:30px 0 10px}
+.media-card p{font-size:13px;line-height:1.7;color:rgba(255,255,255,.65);margin:0}
+
+/* CTA */
+.cta{padding:112px 0;text-align:center;background:linear-gradient(180deg,#f7f7f5,#ebe7de)}
+.cta h2{font-size:clamp(48px,6vw,82px);line-height:.96;letter-spacing:-.055em;margin:14px auto 20px;max-width:900px}
+.cta p{font-size:18px;line-height:1.65;color:var(--muted);max-width:690px;margin:0 auto 30px}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.btn{padding:15px 22px;border-radius:14px;font-size:14px;font-weight:700}
+.btn.primary{background:var(--navy);color:#fff}
+.btn.secondary{background:#fff;border:1px solid var(--line);color:var(--navy)}
+
+footer{background:var(--navy3);color:rgba(255,255,255,.65);padding:46px 0}
+.foot{display:flex;justify-content:space-between;align-items:flex-end;gap:30px}
+.foot strong{display:block;color:#fff;font-family:Georgia,serif;font-size:20px;font-weight:500}
+.foot p{font-size:12px;line-height:1.65;margin:8px 0 0;max-width:530px}
+.foot .right{text-align:right}
+
+.reveal{opacity:0;transform:translateY(22px);transition:.72s cubic-bezier(.22,1,.36,1)}
+.reveal.show{opacity:1;transform:none}
+
+@media(max-width:1024px){
+  .links{display:none}
+  .hero-grid,.research-grid,.mentor-grid,.pub-box{grid-template-columns:1fr}
+  .hero-visual{height:560px}
+  .metric-grid{grid-template-columns:1fr 1fr}
+  .conf,.conf.wide{grid-column:span 12}.conf.wide{grid-template-columns:1fr}
+  .editorial-grid,.media-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:720px){
+  .wrap{width:min(var(--max),calc(100% - 28px))}
+  .nav{height:68px}.brand{min-width:0}.brand strong{font-size:17px}.brand small,.book{display:none}
+  .hero{padding-top:48px}.hero-visual{height:470px;border-radius:28px}.paper{transform:translate(-50%,-50%) rotate(-5deg) scale(.78)}
+  section{padding:82px 0}
+  .metric-grid,.research-side,.editorial-grid,.media-grid{grid-template-columns:1fr}
+  .research-main{padding:30px}
+  .conf-media,.conf.wide .conf-media{height:300px}
+  .mentor-visual{min-height:430px}
+  .pub-big{font-size:78px}
+  .foot{flex-direction:column;align-items:flex-start}.foot .right{text-align:left}
+}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* Consistent navigation to all eight standalone pages. */
+.topbar .nav { gap:20px; }
+.topbar .links { gap:16px; font-size:13px; }
+.topbar .links a, .topbar .book, .topbar .nav-cta { white-space:nowrap; }
+.topbar .brand { min-width:0; flex-shrink:0; }
+.topbar .menu { display:none; background:none; border:0; color:var(--navy); min-width:44px; min-height:44px; align-items:center; justify-content:center; cursor:pointer; }
+.topbar .menu svg { width:24px; height:24px; }
+@media(max-width:1399px) {
+  .topbar .nav { position:relative; }
+  .topbar .links, .topbar .book, .topbar .nav-cta { display:none; }
+  .topbar .menu { display:flex; }
+  .topbar .links.is-open { display:flex; position:absolute; top:100%; right:0; left:0; flex-direction:column; align-items:stretch; gap:0; padding:12px 20px; max-height:calc(100dvh - 90px); overflow-y:auto; background:#FCFBF8; border:1px solid #E7E0D5; z-index:1000; }
+  .topbar .links.is-open a { padding:12px 0; font-size:15px; }
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <path d="M24 6C24 6 16 14 16 22C16 26.4 19.6 30 24 30C28.4 30 32 26.4 32 22C32 14 24 6 24 6Z" stroke="#B48A46" stroke-width="1.5"/>
+        <path d="M24 30V42M10 24C10 24 12 32 24 32C36 32 38 24 38 24" stroke="#B48A46" stroke-width="1.5"/>
+      </svg>
+      <span><strong>Dr. Mahaveer Mehta</strong><small>MEDICAL CENTER · DUBAI</small></span>
+    </a>
+
+    <nav class="links" id="page-navigation" aria-label="Primary"><a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="treatments.html">Treatments</a>
+<a href="technology.html">Technology</a>
+<a href="awards.html">Awards</a>
+<a href="media-research.html" class="active" aria-current="page">Media &amp; Research</a>
+<a href="clinic.html">Clinic</a>
+<a href="contact.html">Contact</a></nav>
+
+    <a class="book" href="contact.html">Book an Appointment</a>
+  <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="page-navigation"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.5"/></svg></button></div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <div class="kicker">Research · Conferences · Editorial Leadership</div>
+      <h1>Knowledge,<br>shared beyond<br>the clinic.</h1>
+      <p class="hero-copy">Research publications, international faculty appointments, scientific leadership and mentorship have been part of Dr. Mahaveer Mehta’s dermatology career alongside clinical practice in Dubai.</p>
+    </div>
+
+    <div class="hero-visual reveal">
+      <div class="paper">
+        <div class="line"></div><div class="line m"></div><div class="line"></div><div class="line s"></div>
+        <div class="chart"></div>
+      </div>
+      <div class="mic"></div>
+      <div class="hero-chip"><small>Research & international education</small><b>Clinical experience translated into teaching, speaking and publication.</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="metrics">
+  <div class="wrap metric-grid">
+    <div class="metric reveal"><strong>20+</strong><span>Research publications in international journals</span></div>
+    <div class="metric reveal"><strong>Global</strong><span>Invited faculty & conference speaker</span></div>
+    <div class="metric reveal"><strong>ASDS</strong><span>International Travelling Mentor</span></div>
+    <div class="metric reveal"><strong>15+</strong><span>Editorial & journal appointments listed</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Research experience</div>
+      <h2>Research as part<br>of clinical practice.</h2>
+      <p>Dr. Mehta’s official profile states that he has authored more than twenty research publications in international journals and has been invited as faculty and speaker at dermatology and laser conferences worldwide.</p>
+    </div>
+
+    <div class="research-grid">
+      <article class="research-main reveal">
+        <div>
+          <div class="eyebrow">Published work</div>
+          <h3>More than twenty international publications.</h3>
+          <p>The official clinic biography confirms a body of more than twenty research publications. The current public profile does not provide a complete bibliographic list, so this page does not invent publication titles or journal citations that are not supplied by the clinic.</p>
+        </div>
+        <div class="research-mark"><strong>20+</strong><span>Research publications · Official profile</span></div>
+      </article>
+
+      <div class="research-side">
+        <article class="mini-card reveal"><span class="num">01</span><h4>Dermatology Research</h4><p>Research experience developed alongside clinical dermatology practice across India, Libya, Qatar, Bahrain and Dubai.</p><div class="meta">Clinical + Academic Career</div></article>
+        <article class="mini-card reveal"><span class="num">02</span><h4>Laser Medicine</h4><p>The official profile describes Dr. Mehta as a pioneer in introducing laser dermatology to the Middle East.</p><div class="meta">Laser Dermatology</div></article>
+        <article class="mini-card reveal"><span class="num">03</span><h4>International Faculty</h4><p>Invited faculty and speaker roles are listed across international dermatology, laser and aesthetic medicine conferences.</p><div class="meta">Global Education</div></article>
+        <article class="mini-card reveal"><span class="num">04</span><h4>Scientific Committees</h4><p>Leadership roles include chairing scientific committees and co-chairing international dermatology congresses.</p><div class="meta">Scientific Leadership</div></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">International conferences</div>
+      <h2>Chair. Speaker.<br>Keynote. Faculty.</h2>
+      <p>Conference leadership is a recurring theme in the official career record, including DASIL, ICAAM, international aesthetic dermatology meetings and clinical dermatology conferences.</p>
+    </div>
+
+    <div class="conference-grid">
+      <article class="conf wide reveal">
+        <div class="conf-media"><img src="images/Dr.Mahaveermehtacongresspresidentdasireceivesoutstandingcontributionawardfororganisingworldcongressofdermatologyindubai.jpg" alt="Dr. Mahaveer Mehta at DASIL congress recognition"></div>
+        <div class="conf-copy"><small>DASIL · Dubai 2016</small><h3>Congress President</h3><p>Dr. Mehta’s official profile records him as Congress President of the DASIL annual world conference in Dubai in October 2016, with subsequent international committee and co-chair roles.</p></div>
+      </article>
+
+      <article class="conf reveal">
+        <div class="conf-media"><img src="images/drmahaveermehtadermatologistindubaiawardedoutstandingawardfororganisingseveralinternationalicaamdermatologyconferencesindubai.jpg" alt="Dr. Mehta at ICAAM scientific conference recognition"></div>
+        <div class="conf-copy"><small>ICAAM · 2013–2016</small><h3>Scientific Committee Chair</h3><p>Appointed Chairman of the scientific committee and faculty for multiple International Congress in Aesthetics, Anti-ageing Medicine and Medical Spa meetings.</p></div>
+      </article>
+
+      <article class="conf reveal">
+        <div class="conf-media"><img src="images/dr_mahaveermehtadermatologistindubaireceiveshighestawardindermatology.jpg" alt="International aesthetic dermatology conference recognition"></div>
+        <div class="conf-copy"><small>International · 2018</small><h3>Guest of Honor & Keynote Speaker</h3><p>The official archive lists medal, guest-of-honor, conference oration, chair and keynote-speaker roles at international aesthetic and clinical dermatology conferences.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="mentor">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">International mentorship</div>
+      <h2>Teaching through<br>clinical experience.</h2>
+      <p>The official profile lists Dr. Mehta as an International Mentor in the International Travelling Mentorship Program of the American Society for Dermatologic Surgery.</p>
+    </div>
+
+    <div class="mentor-grid">
+      <div class="mentor-visual reveal">
+        <div class="mentor-caption"><small>American Society for Dermatologic Surgery</small><b>International Travelling Mentorship Program</b></div>
+      </div>
+
+      <div class="mentor-copy">
+        <article class="mentor-card reveal">
+          <div class="eyebrow">ASDS</div>
+          <h3>International Mentor</h3>
+          <p>Mentorship is listed as a formal part of Dr. Mehta’s research and professional experience, connecting clinical practice with international education.</p>
+          <ul>
+            <li>International Travelling Mentorship Program</li>
+            <li>American Society for Dermatologic Surgery</li>
+            <li>Outstanding contribution recognition also listed in the official archive</li>
+          </ul>
+        </article>
+
+        <article class="mentor-card reveal">
+          <div class="eyebrow">Academic background</div>
+          <h3>Faculty before Dubai.</h3>
+          <p>Before establishing his own medical center in Dubai, Dr. Mehta held faculty positions at Al Fateh University in Tripoli, Libya and SMS Medical College and Hospital in Jaipur, India.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="editorial">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Editorial leadership</div>
+      <h2>Contributing to<br>the scientific record.</h2>
+      <p>The official About page lists numerous editorial board appointments and an executive editor / editor-in-chief role across dermatology and medical journals.</p>
+    </div>
+
+    <div class="editorial-grid">
+      <article class="journal reveal"><span>Editorial Board</span><h3>Journal of Procedural Dermatology</h3></article>
+      <article class="journal reveal"><span>Editorial Board</span><h3>Journal of Clinical & Cosmetic Dermatology</h3></article>
+      <article class="journal reveal"><span>Editorial Board</span><h3>Journal of Case Reports & Literature Review</h3></article>
+      <article class="journal reveal"><span>Editorial Board</span><h3>Journal of Cosmetic Dermatology (JCOS)</h3></article>
+      <article class="journal reveal"><span>Editorial Board</span><h3>Journal of Clinical Research in Dermatology</h3></article>
+      <article class="journal reveal"><span>Executive Editor</span><h3>Journal of Clinical Dermatology and Dermatitis</h3></article>
+      <article class="journal reveal"><span>Editorial Board</span><h3>Journal of Biomed Research</h3></article>
+      <article class="journal reveal"><span>Editorial Board</span><h3>Journal of Dermatology & Surgical Therapy</h3></article>
+      <article class="journal reveal"><span>Editorial Board</span><h3>Journal of Skincare & Cosmetic Surgery</h3></article>
+      <article class="journal reveal"><span>Editorial Board</span><h3>Journal of Clinical Medical Reviews & Reports</h3></article>
+      <article class="journal reveal"><span>Editor-in-Chief</span><h3>International Journal of Dermatology & Allergy Research</h3></article>
+      <article class="journal reveal"><span>Editorial Board</span><h3>Madridge Journal of Dermatology</h3></article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Publications</div>
+      <h2>What the official profile<br>currently confirms.</h2>
+    </div>
+
+    <div class="pub-box reveal">
+      <div class="pub-big">20+<small>Research publications</small></div>
+      <div class="pub-copy">
+        <h3>No fabricated bibliography.</h3>
+        <p>The clinic’s public About page confirms more than twenty research publications in international journals, but it does not currently publish the complete titles, authors, dates, journal names or DOI links. This page therefore keeps the claim at the level supported by the official source.</p>
+        <div class="pub-note">A full Selected Publications section can be added later when the clinic provides the publication list or CV.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Media, education & contribution</div>
+      <h2>A career visible<br>outside clinical practice.</h2>
+      <p>The public profile shows professional activity across teaching, scientific meetings, editorial roles and humanitarian contribution.</p>
+    </div>
+
+    <div class="media-grid">
+      <article class="media-card reveal"><div class="icon">✦</div><h3>Conference Faculty</h3><p>Invited faculty, chair and speaker roles at dermatology, laser and aesthetic medicine meetings worldwide.</p></article>
+      <article class="media-card reveal"><div class="icon">◎</div><h3>Scientific Leadership</h3><p>DASIL Congress President, ICAAM Scientific Committee Chair and additional international co-chair responsibilities.</p></article>
+      <article class="media-card reveal"><div class="icon">▦</div><h3>Journal Service</h3><p>Editorial board and editor roles across a broad set of dermatology and medical journals listed by the official profile.</p></article>
+      <article class="media-card reveal"><div class="icon">↗</div><h3>International Mentorship</h3><p>International Mentor in the ASDS International Travelling Mentorship Program.</p></article>
+      <article class="media-card reveal"><div class="icon">◇</div><h3>Professional Societies</h3><p>Leadership and participation across DASIL, AAD, ASDS and other international dermatologic organizations.</p></article>
+      <article class="media-card reveal"><div class="icon">♡</div><h3>Social Contribution</h3><p>The clinic also documents philanthropic support involving AAD programs, Rotary initiatives and humanitarian causes.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="wrap reveal">
+    <div class="eyebrow">Dr. Mahaveer Mehta Medical Center · Dubai</div>
+    <h2>Research informs care.<br>Experience guides it.</h2>
+    <p>Contact the clinic to arrange a consultation or learn more about Dr. Mehta’s dermatology and laser practice in Dubai.</p>
+    <div class="actions">
+      <a class="btn primary" href="tel:+97142282444">Call +971 4 228 2444</a>
+      <a class="btn secondary" href="https://wa.me/971508446333" target="_blank" rel="noopener">WhatsApp +971 50 844 6333</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <strong>Dr. Mahaveer Mehta Medical Center</strong>
+      <p>641-B, Al Ghurair Centre, Dubai, United Arab Emirates<br>drmmehta@emirates.net.ae</p>
+    </div>
+    <div class="right"><p>Research, faculty, conference, mentorship and editorial information summarized from the doctor’s official clinic profile.</p></div>
+  </div>
+</footer>
+
+<script>
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){entry.target.classList.add('show');observer.unobserve(entry.target)}
+  })
+},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+<script>
+(function(){
+ var button=document.querySelector('.topbar .menu'), menu=document.getElementById('page-navigation');
+ if(!button||!menu)return;
+ function close(){menu.classList.remove('is-open');button.setAttribute('aria-expanded','false');}
+ button.addEventListener('click',function(){var open=menu.classList.toggle('is-open');button.setAttribute('aria-expanded',String(open));});
+ menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape'){close();button.focus();}});
+ document.addEventListener('click',function(e){if(!menu.contains(e.target)&&!button.contains(e.target))close();});
+ window.addEventListener('resize',function(){if(window.innerWidth>1399)close();});
+})();
+</script>
+</body>
+</html>

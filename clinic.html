@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Clinic | Dr. Mahaveer Mehta Medical Center, Dubai</title>
+<meta name="description" content="Visit Dr. Mahaveer Mehta Medical Center at 641-B, Al Ghurair Centre, Dubai. Explore the clinic experience, consultation journey, technology and contact details.">
+<style>
+:root{
+  --navy:#0a1f3e;--navy2:#12365f;--navy3:#071a35;--ink:#0d1a2b;
+  --gold:#b58a45;--gold2:#d4b577;--paper:#f7f7f5;--warm:#efebe3;
+  --white:#fff;--line:#e5e3df;--muted:#68727e;--max:1240px
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Segoe UI",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden
+}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+
+/* NAV */
+.topbar{
+  position:sticky;top:0;z-index:100;background:rgba(247,247,245,.82);
+  backdrop-filter:saturate(180%) blur(24px);border-bottom:1px solid rgba(10,31,62,.07)
+}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.brand{display:flex;align-items:center;gap:12px;min-width:280px}
+.brand svg{width:42px;height:42px}
+.brand strong{display:block;font-family:Georgia,serif;font-size:20px;font-weight:500;color:var(--navy)}
+.brand small{display:block;font-size:9px;letter-spacing:.22em;color:var(--gold);margin-top:3px}
+.links{display:flex;gap:25px;align-items:center;font-size:14px;color:#333d49}
+.links a{padding:28px 0 24px;border-bottom:2px solid transparent}
+.links a.active{color:var(--navy);border-color:var(--gold)}
+.book{background:var(--navy);color:#fff;padding:13px 20px;border-radius:14px;font-size:14px;font-weight:700}
+
+/* HERO */
+.hero{padding:82px 0 58px}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:46px;align-items:center}
+.kicker{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:800}
+h1{
+  margin:22px 0 28px;font-size:clamp(60px,7.2vw,108px);line-height:.95;
+  letter-spacing:-.065em;font-weight:650
+}
+.hero-copy{
+  margin:0;max-width:720px;color:#55606e;font-size:clamp(18px,2vw,27px);
+  line-height:1.5;letter-spacing:-.02em
+}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:15px 22px;border-radius:14px;font-size:14px;font-weight:700}
+.btn.primary{background:var(--navy);color:#fff}
+.btn.secondary{background:#fff;border:1px solid var(--line);color:var(--navy)}
+
+.hero-visual{
+  height:680px;border-radius:40px;overflow:hidden;position:relative;
+  background:linear-gradient(145deg,#f7f3ec,#ebe4da);
+  box-shadow:0 38px 100px rgba(10,31,62,.14)
+}
+.clinic-room{position:absolute;inset:0;background:linear-gradient(180deg,#f5f1ea,#e8e0d5)}
+.wall-panel{position:absolute;left:8%;top:10%;width:84%;height:60%;border-radius:30px;background:#fbfaf7;box-shadow:inset 0 0 0 1px #e9e4db}
+.window{
+  position:absolute;right:10%;top:16%;width:44%;height:32%;border-radius:22px;
+  background:linear-gradient(180deg,#dce7f2,#becfdf);overflow:hidden
+}
+.window:before,.window:after{content:"";position:absolute;background:#afc0d1;opacity:.8}
+.window:before{width:2px;height:100%;left:50%}.window:after{height:2px;width:100%;top:50%}
+.desk{
+  position:absolute;left:15%;bottom:16%;width:58%;height:22%;border-radius:28px 28px 14px 14px;
+  background:linear-gradient(180deg,#153a67,#0a1f3e);box-shadow:0 25px 55px rgba(10,31,62,.24)
+}
+.desk:before{
+  content:"";position:absolute;left:8%;right:8%;top:14%;height:24px;border-radius:999px;background:#1d4c82
+}
+.chair{position:absolute;right:12%;bottom:15%;width:16%;height:22%;border-radius:30px;background:#c7a76c}
+.chair:before{content:"";position:absolute;left:22%;right:22%;top:-31%;height:53%;border-radius:26px;background:#d7bf92}
+.plant{position:absolute;left:9%;bottom:18%;width:8%;height:17%;border-radius:0 0 16px 16px;background:#d8c09b}
+.plant:before,.plant:after{
+  content:"";position:absolute;bottom:82%;width:72%;height:82%;background:#84966f;border-radius:70% 10% 70% 10%
+}
+.plant:before{left:-5%;transform:rotate(-30deg)}.plant:after{right:-5%;transform:scaleX(-1) rotate(-30deg)}
+.wall-logo{
+  position:absolute;left:14%;top:18%;font-family:Georgia,serif;color:var(--navy);
+  font-size:27px;line-height:1.05
+}
+.wall-logo span{display:block;margin-top:9px;color:var(--gold);font-family:Arial,sans-serif;font-size:8px;letter-spacing:.2em}
+.hero-chip{
+  position:absolute;left:24px;right:24px;bottom:22px;padding:18px 20px;border-radius:20px;
+  background:rgba(255,255,255,.74);border:1px solid rgba(255,255,255,.8);backdrop-filter:blur(18px)
+}
+.hero-chip small{display:block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+.hero-chip b{display:block;margin-top:7px;color:var(--navy);font-size:21px;letter-spacing:-.02em}
+
+/* SHARED */
+section{padding:106px 0}
+.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:800}
+.section-head{max-width:900px;margin-bottom:48px}
+.section-head h2{
+  font-size:clamp(44px,5.3vw,78px);line-height:.98;letter-spacing:-.058em;margin:14px 0 18px
+}
+.section-head p{font-size:18px;line-height:1.72;color:var(--muted);max-width:800px;margin:0}
+.dark{background:var(--navy);color:#fff}
+.dark .section-head h2{color:#fff}
+.dark .section-head p{color:rgba(255,255,255,.68)}
+
+/* FACT STRIP */
+.fact-strip{padding:24px 0 0}
+.fact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.fact{
+  background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px
+}
+.fact strong{display:block;font-size:31px;letter-spacing:-.04em;color:var(--navy)}
+.fact span{display:block;margin-top:7px;font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:#7c8490}
+
+/* VISIT */
+.visit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.visit-card{
+  background:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;min-height:310px;
+  display:flex;flex-direction:column
+}
+.visit-num{font-size:12px;color:var(--gold);letter-spacing:.15em;font-weight:800}
+.visit-card h3{font-size:29px;line-height:1.02;letter-spacing:-.04em;color:var(--navy);margin:30px 0 12px}
+.visit-card p{font-size:14px;line-height:1.7;color:var(--muted);margin:0}
+.visit-card .meta{margin-top:auto;padding-top:24px;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:#8a929c}
+
+/* ENVIRONMENT */
+.environment{background:#fff}
+.environment-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:20px}
+.environment-visual{
+  min-height:600px;border-radius:34px;position:relative;overflow:hidden;background:linear-gradient(145deg,#f8f3eb,#e3d6c5)
+}
+.environment-visual:before{
+  content:"";position:absolute;inset:8%;border-radius:28px;background:#fbfaf7;
+  box-shadow:0 28px 70px rgba(52,42,26,.10)
+}
+.environment-visual .screen{
+  position:absolute;left:19%;top:19%;width:62%;height:34%;border-radius:20px;background:linear-gradient(180deg,#9db4cd,#6e8ba9);
+  border:12px solid #f0f2f4
+}
+.environment-visual .console{
+  position:absolute;left:31%;bottom:19%;width:38%;height:31%;border-radius:28px;background:linear-gradient(180deg,#fafbfc,#d0dae3);
+  box-shadow:0 25px 50px rgba(10,31,62,.18)
+}
+.environment-visual .console:before{
+  content:"";position:absolute;left:23%;right:23%;top:20%;height:34%;border-radius:16px;background:#8ea7c1
+}
+.environment-copy{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.env-card{
+  border:1px solid var(--line);border-radius:27px;background:#fafaf8;padding:28px;min-height:286px
+}
+.env-card h3{font-size:27px;line-height:1.04;letter-spacing:-.04em;color:var(--navy);margin:26px 0 11px}
+.env-card p{font-size:13px;line-height:1.7;color:var(--muted);margin:0}
+.env-icon{width:50px;height:50px;border-radius:16px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;color:var(--gold);font-weight:800}
+
+/* SINCE 1990 */
+.since-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:20px;align-items:stretch}
+.since-copy{
+  border-radius:34px;padding:42px;background:linear-gradient(145deg,#071a35,#123a67);color:#fff;
+  min-height:520px;display:flex;flex-direction:column;justify-content:flex-end
+}
+.since-copy strong{font-size:clamp(78px,9vw,130px);line-height:.75;letter-spacing:-.07em;color:var(--gold2)}
+.since-copy h3{font-size:42px;line-height:1;letter-spacing:-.05em;margin:28px 0 16px}
+.since-copy p{max-width:620px;margin:0;font-size:15px;line-height:1.75;color:rgba(255,255,255,.68)}
+.since-side{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.since-card{background:#fff;border:1px solid var(--line);border-radius:27px;padding:28px}
+.since-card span{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:800}
+.since-card h4{font-size:25px;line-height:1.05;color:var(--navy);letter-spacing:-.035em;margin:23px 0 10px}
+.since-card p{font-size:13px;line-height:1.65;color:var(--muted);margin:0}
+
+/* LOCATION */
+.location{background:var(--warm)}
+.location-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:20px}
+.map-card{
+  min-height:600px;border-radius:34px;position:relative;overflow:hidden;
+  background:
+    linear-gradient(35deg,transparent 48%,rgba(10,31,62,.09) 49%,rgba(10,31,62,.09) 51%,transparent 52%),
+    linear-gradient(-35deg,transparent 48%,rgba(10,31,62,.07) 49%,rgba(10,31,62,.07) 51%,transparent 52%),
+    #e5e8e7;
+  background-size:120px 120px,160px 160px,auto
+}
+.map-card:before{
+  content:"";position:absolute;left:18%;top:12%;width:32%;height:70%;border-radius:40%;border:20px solid rgba(255,255,255,.68);transform:rotate(18deg)
+}
+.map-card:after{
+  content:"";position:absolute;right:6%;bottom:10%;width:45%;height:40%;border-radius:50%;background:#cbd7cf;opacity:.72
+}
+.pin{
+  position:absolute;z-index:3;left:53%;top:42%;transform:translate(-50%,-50%);
+  width:68px;height:68px;border-radius:50% 50% 50% 0;background:var(--navy);transform-origin:center;
+  rotate:-45deg;box-shadow:0 20px 40px rgba(10,31,62,.22)
+}
+.pin:after{content:"";position:absolute;width:22px;height:22px;border-radius:50%;background:var(--gold2);left:23px;top:23px}
+.map-label{
+  position:absolute;z-index:4;left:30px;right:30px;bottom:28px;padding:20px 22px;border-radius:20px;
+  background:rgba(255,255,255,.86);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.95)
+}
+.map-label small{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);font-weight:800}
+.map-label b{display:block;font-size:22px;letter-spacing:-.025em;color:var(--navy);margin-top:8px}
+.contact-card{
+  background:#fff;border:1px solid #ddd9d0;border-radius:34px;padding:36px;display:flex;flex-direction:column
+}
+.contact-card h3{font-size:40px;line-height:1;letter-spacing:-.05em;color:var(--navy);margin:12px 0 22px}
+.contact-list{margin-top:10px}
+.contact-row{padding:18px 0;border-top:1px solid var(--line)}
+.contact-row span{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:800}
+.contact-row b{display:block;margin-top:7px;color:var(--navy);font-size:17px;line-height:1.45}
+.contact-actions{margin-top:auto;padding-top:26px;display:flex;flex-wrap:wrap;gap:10px}
+
+/* NOTE */
+.note-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.note-card{border-radius:28px;background:#fff;border:1px solid var(--line);padding:32px}
+.note-card h3{font-size:31px;letter-spacing:-.04em;color:var(--navy);margin:12px 0 13px}
+.note-card p{font-size:14px;line-height:1.7;color:var(--muted);margin:0}
+.note-card ul{list-style:none;padding:0;margin:18px 0 0}
+.note-card li{padding:12px 0;border-top:1px solid var(--line);font-size:13px;color:#59636e}
+.note-card li:before{content:"•";color:var(--gold);margin-right:9px}
+
+/* CTA */
+.cta{text-align:center;padding:112px 0;background:linear-gradient(180deg,#f7f7f5,#ebe7de)}
+.cta h2{font-size:clamp(48px,6vw,82px);line-height:.96;letter-spacing:-.055em;margin:14px auto 20px;max-width:920px}
+.cta p{font-size:18px;line-height:1.65;color:var(--muted);max-width:690px;margin:0 auto 30px}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+
+footer{background:var(--navy3);color:rgba(255,255,255,.65);padding:46px 0}
+.foot{display:flex;justify-content:space-between;gap:30px;align-items:flex-end}
+.foot strong{display:block;color:#fff;font-family:Georgia,serif;font-size:20px;font-weight:500}
+.foot p{font-size:12px;line-height:1.65;margin:8px 0 0;max-width:540px}
+.foot .right{text-align:right}
+
+.reveal{opacity:0;transform:translateY(22px);transition:.72s cubic-bezier(.22,1,.36,1)}
+.reveal.show{opacity:1;transform:none}
+
+@media(max-width:1024px){
+  .links{display:none}
+  .hero-grid,.environment-grid,.since-grid,.location-grid{grid-template-columns:1fr}
+  .hero-visual{height:560px}
+  .fact-grid,.visit-grid{grid-template-columns:1fr 1fr}
+  .environment-copy,.since-side{grid-template-columns:1fr 1fr}
+  .map-card{min-height:500px}
+}
+@media(max-width:720px){
+  .wrap{width:min(var(--max),calc(100% - 28px))}
+  .nav{height:68px}.brand{min-width:0}.brand strong{font-size:17px}.brand small,.book{display:none}
+  .hero{padding-top:48px}.hero-visual{height:470px;border-radius:28px}
+  section{padding:82px 0}
+  .fact-grid,.visit-grid,.environment-copy,.since-side,.note-grid{grid-template-columns:1fr}
+  .environment-visual{min-height:440px}
+  .since-copy{min-height:430px;padding:30px}
+  .map-card{min-height:440px}
+  .contact-card{padding:28px}
+  .foot{flex-direction:column;align-items:flex-start}.foot .right{text-align:left}
+}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* Consistent navigation to all eight standalone pages. */
+.topbar .nav { gap:20px; }
+.topbar .links { gap:16px; font-size:13px; }
+.topbar .links a, .topbar .book, .topbar .nav-cta { white-space:nowrap; }
+.topbar .brand { min-width:0; flex-shrink:0; }
+.topbar .menu { display:none; background:none; border:0; color:var(--navy); min-width:44px; min-height:44px; align-items:center; justify-content:center; cursor:pointer; }
+.topbar .menu svg { width:24px; height:24px; }
+@media(max-width:1399px) {
+  .topbar .nav { position:relative; }
+  .topbar .links, .topbar .book, .topbar .nav-cta { display:none; }
+  .topbar .menu { display:flex; }
+  .topbar .links.is-open { display:flex; position:absolute; top:100%; right:0; left:0; flex-direction:column; align-items:stretch; gap:0; padding:12px 20px; max-height:calc(100dvh - 90px); overflow-y:auto; background:#FCFBF8; border:1px solid #E7E0D5; z-index:1000; }
+  .topbar .links.is-open a { padding:12px 0; font-size:15px; }
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <path d="M24 6C24 6 16 14 16 22C16 26.4 19.6 30 24 30C28.4 30 32 26.4 32 22C32 14 24 6 24 6Z" stroke="#B48A46" stroke-width="1.5"/>
+        <path d="M24 30V42M10 24C10 24 12 32 24 32C36 32 38 24 38 24" stroke="#B48A46" stroke-width="1.5"/>
+      </svg>
+      <span><strong>Dr. Mahaveer Mehta</strong><small>MEDICAL CENTER · DUBAI</small></span>
+    </a>
+
+    <nav class="links" id="page-navigation" aria-label="Primary"><a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="treatments.html">Treatments</a>
+<a href="technology.html">Technology</a>
+<a href="awards.html">Awards</a>
+<a href="media-research.html">Media &amp; Research</a>
+<a href="clinic.html" class="active" aria-current="page">Clinic</a>
+<a href="contact.html">Contact</a></nav>
+
+    <a class="book" href="contact.html">Book an Appointment</a>
+  <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="page-navigation"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.5"/></svg></button></div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <div class="kicker">The Clinic · Dubai</div>
+      <h1>Care begins<br>with clarity.</h1>
+      <p class="hero-copy">A focused dermatology experience built around consultation, clinical judgment and technology selected for the individual patient — in Dubai since 1990.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#visit">What to Expect</a>
+        <a class="btn secondary" href="#location">Find the Clinic</a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal" aria-label="Illustrative modern clinic interior">
+      <div class="clinic-room">
+        <div class="wall-panel"></div><div class="window"></div><div class="desk"></div>
+        <div class="chair"></div><div class="plant"></div>
+        <div class="wall-logo">Dr. Mahaveer Mehta<span>DERMATOLOGY · LASER · AESTHETIC SKIN CARE</span></div>
+      </div>
+      <div class="hero-chip"><small>Dr. Mahaveer Mehta Medical Center</small><b>641-B, Al Ghurair Centre, Dubai</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="fact-strip">
+  <div class="wrap fact-grid">
+    <div class="fact reveal"><strong>Since 1990</strong><span>Chairman & Medical Director in Dubai</span></div>
+    <div class="fact reveal"><strong>41+</strong><span>Years of medical experience</span></div>
+    <div class="fact reveal"><strong>Dubai</strong><span>Al Ghurair Centre</span></div>
+    <div class="fact reveal"><strong>Direct</strong><span>Phone & WhatsApp access</span></div>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Your visit</div>
+      <h2>A simple path from<br>concern to care.</h2>
+      <p>The clinic experience is designed around a medical consultation first, followed by a treatment plan chosen according to the diagnosis, skin type, goals and suitability.</p>
+    </div>
+
+    <div class="visit-grid">
+      <article class="visit-card reveal">
+        <div class="visit-num">01</div><h3>Consultation</h3>
+        <p>Discuss your skin concern, history, previous treatments and what you would like to improve.</p>
+        <div class="meta">Understand first</div>
+      </article>
+      <article class="visit-card reveal">
+        <div class="visit-num">02</div><h3>Assessment</h3>
+        <p>The clinical assessment helps determine the nature of the condition and whether a medical, laser or combination approach is appropriate.</p>
+        <div class="meta">Diagnosis before device</div>
+      </article>
+      <article class="visit-card reveal">
+        <div class="visit-num">03</div><h3>Plan</h3>
+        <p>A personalized plan can then be discussed, including the technology or procedure, expected course and relevant precautions.</p>
+        <div class="meta">Personalized selection</div>
+      </article>
+      <article class="visit-card reveal">
+        <div class="visit-num">04</div><h3>Follow-up</h3>
+        <p>Ongoing review supports treatment decisions over time and helps adjust the plan when clinically necessary.</p>
+        <div class="meta">Continued care</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="environment">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Inside the clinic experience</div>
+      <h2>Clinical focus.<br>Modern capability.</h2>
+      <p>The official clinic profile lists a broad range of dermatology and laser capabilities — from Pico and CO₂ Fractional Laser to Excimer 308nm, vascular systems, RF fractional microneedling and additional aesthetic technologies.</p>
+    </div>
+
+    <div class="environment-grid">
+      <div class="environment-visual reveal">
+        <div class="screen"></div><div class="console"></div>
+      </div>
+
+      <div class="environment-copy">
+        <article class="env-card reveal">
+          <div class="env-icon">01</div>
+          <h3>Dermatology first</h3>
+          <p>Technology is part of the treatment plan, not a substitute for diagnosis and medical assessment.</p>
+        </article>
+        <article class="env-card reveal">
+          <div class="env-icon">02</div>
+          <h3>Laser experience</h3>
+          <p>Dr. Mehta’s official biography describes him as a pioneer in introducing laser dermatology to the Middle East.</p>
+        </article>
+        <article class="env-card reveal">
+          <div class="env-icon">03</div>
+          <h3>Broad capability</h3>
+          <p>The clinic lists treatments across pigmentation, acne and scars, vascular concerns, vitiligo, psoriasis, hair reduction and skin rejuvenation.</p>
+        </article>
+        <article class="env-card reveal">
+          <div class="env-icon">04</div>
+          <h3>Individual selection</h3>
+          <p>The right treatment depends on diagnosis, skin type, prior treatment history and the specific clinical goal.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Dubai practice</div>
+      <h2>Established in Dubai.<br>Built over decades.</h2>
+      <p>Dr. Mehta’s official profile states that he has served as Chairman and Medical Director of his own medical center in Dubai since May 1990.</p>
+    </div>
+
+    <div class="since-grid">
+      <div class="since-copy reveal">
+        <strong>1990</strong>
+        <h3>Dr. Mahaveer Mehta Medical Center, Dubai</h3>
+        <p>The Dubai practice forms the center of a wider career that previously included departmental leadership in Qatar and Bahrain, faculty positions in Libya and India, international research, conference faculty roles and mentorship.</p>
+      </div>
+
+      <div class="since-side">
+        <article class="since-card reveal"><span>Before Dubai</span><h4>Qatar Armed Forces</h4><p>Former Head of Department and Senior Consultant Dermatologist, according to the official biography.</p></article>
+        <article class="since-card reveal"><span>Before Dubai</span><h4>International Hospital Bahrain</h4><p>Former Head of Department and Consultant Dermatologist.</p></article>
+        <article class="since-card reveal"><span>Academic</span><h4>Al Fateh University</h4><p>Faculty position in the Department of Dermatology, Tripoli, Libya.</p></article>
+        <article class="since-card reveal"><span>Academic</span><h4>SMS Medical College</h4><p>Faculty position in the Department of Dermatology in Jaipur, India.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="location" id="location">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Visit us</div>
+      <h2>In the heart of Dubai.</h2>
+      <p>The clinic’s official contact page lists its location at 641-B, Al Ghurair Centre, Dubai, United Arab Emirates.</p>
+    </div>
+
+    <div class="location-grid">
+      <div class="map-card reveal" aria-label="Stylized map showing the clinic location in Dubai">
+        <div class="pin"></div>
+        <div class="map-label"><small>Clinic location</small><b>641-B, Al Ghurair Centre, Dubai</b></div>
+      </div>
+
+      <div class="contact-card reveal">
+        <div class="eyebrow">Contact details</div>
+        <h3>Plan your visit.</h3>
+        <div class="contact-list">
+          <div class="contact-row"><span>Address</span><b>641-B, Al Ghurair Centre<br>P.O. Box 14477, Dubai, UAE</b></div>
+          <div class="contact-row"><span>Phone</span><b><a href="tel:+97142282444">+971 4 228 2444</a></b></div>
+          <div class="contact-row"><span>WhatsApp</span><b><a href="https://wa.me/971508446333" target="_blank" rel="noopener">+971 50 844 6333</a></b></div>
+          <div class="contact-row"><span>Email</span><b><a href="mailto:drmmehta@emirates.net.ae">drmmehta@emirates.net.ae</a></b></div>
+        </div>
+        <div class="contact-actions">
+          <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=Dr.+Mahaveer+Mehta+Medical+Center+Al+Ghurair+Centre+Dubai" target="_blank" rel="noopener">Get Directions</a>
+          <a class="btn secondary" href="https://wa.me/971508446333" target="_blank" rel="noopener">WhatsApp Clinic</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap note-grid">
+    <div class="note-card reveal">
+      <div class="eyebrow">Before you visit</div>
+      <h3>Useful information to bring.</h3>
+      <ul>
+        <li>A list of current medications where relevant</li>
+        <li>Previous dermatology or laser treatment history</li>
+        <li>Recent reports or pathology results if related to the concern</li>
+        <li>Questions about downtime, aftercare or treatment options</li>
+      </ul>
+    </div>
+
+    <div class="note-card reveal">
+      <div class="eyebrow">Treatment planning</div>
+      <h3>Not every device is right for every patient.</h3>
+      <p>This page describes the clinic and its general treatment approach. Suitability for any medical, laser or aesthetic procedure requires individual consultation and assessment.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="wrap reveal">
+    <div class="eyebrow">Dr. Mahaveer Mehta Medical Center · Dubai</div>
+    <h2>Your first step is a conversation.</h2>
+    <p>Call or message the clinic to arrange a consultation and discuss your dermatology or laser treatment needs.</p>
+    <div class="actions">
+      <a class="btn primary" href="tel:+97142282444">Call +971 4 228 2444</a>
+      <a class="btn secondary" href="https://wa.me/971508446333" target="_blank" rel="noopener">WhatsApp +971 50 844 6333</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <strong>Dr. Mahaveer Mehta Medical Center</strong>
+      <p>641-B, Al Ghurair Centre, Dubai, United Arab Emirates<br>drmmehta@emirates.net.ae</p>
+    </div>
+    <div class="right"><p>Clinic location, contact details and professional background summarized from Dr. Mahaveer Mehta’s official website.</p></div>
+  </div>
+</footer>
+
+<script>
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){entry.target.classList.add('show');observer.unobserve(entry.target)}
+  })
+},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+<script>
+(function(){
+ var button=document.querySelector('.topbar .menu'), menu=document.getElementById('page-navigation');
+ if(!button||!menu)return;
+ function close(){menu.classList.remove('is-open');button.setAttribute('aria-expanded','false');}
+ button.addEventListener('click',function(){var open=menu.classList.toggle('is-open');button.setAttribute('aria-expanded',String(open));});
+ menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape'){close();button.focus();}});
+ document.addEventListener('click',function(e){if(!menu.contains(e.target)&&!button.contains(e.target))close();});
+ window.addEventListener('resize',function(){if(window.innerWidth>1399)close();});
+})();
+</script>
+</body>
+</html>

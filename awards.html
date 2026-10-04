@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Awards & Recognition | Dr. Mahaveer Mehta Medical Center</title>
+<meta name="description" content="Awards, honors, international appointments and professional recognition of Dr. Mahaveer Mehta, dermatologist and laser specialist in Dubai.">
+<style>
+:root{
+  --navy:#0a1f3e;--navy2:#12345f;--ink:#0c1929;--gold:#b58a45;--gold2:#d4b577;
+  --paper:#f7f7f5;--warm:#efebe3;--white:#fff;--line:#e6e4df;--muted:#69717d;
+  --max:1240px;--radius:30px
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Segoe UI",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden
+}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+
+/* NAV */
+.topbar{
+  position:sticky;top:0;z-index:100;background:rgba(247,247,245,.8);
+  backdrop-filter:saturate(180%) blur(24px);border-bottom:1px solid rgba(10,31,62,.07)
+}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.brand{display:flex;align-items:center;gap:12px;min-width:280px}
+.brand svg{width:42px;height:42px}
+.brand strong{display:block;font-family:Georgia,serif;font-size:20px;font-weight:500;color:var(--navy)}
+.brand small{display:block;font-size:9px;letter-spacing:.22em;color:var(--gold);margin-top:3px}
+.links{display:flex;gap:28px;align-items:center;font-size:14px;color:#343c48}
+.links a{padding:28px 0 24px;border-bottom:2px solid transparent}
+.links a.active{color:var(--navy);border-color:var(--gold)}
+.book{background:var(--navy);color:#fff;padding:13px 20px;border-radius:14px;font-weight:700;font-size:14px}
+
+/* HERO */
+.hero{padding:84px 0 54px}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center}
+.kicker{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:800}
+h1{
+  margin:22px 0 28px;font-size:clamp(58px,7.4vw,108px);line-height:.94;
+  letter-spacing:-.065em;font-weight:650
+}
+.hero p{
+  margin:0;max-width:720px;color:#56616f;font-size:clamp(18px,2vw,27px);
+  line-height:1.48;letter-spacing:-.02em
+}
+.hero-visual{
+  position:relative;height:690px;border-radius:40px;overflow:hidden;
+  background:linear-gradient(145deg,#071a35,#0d2c55 52%,#174879);
+  box-shadow:0 36px 100px rgba(10,31,62,.17)
+}
+.hero-visual img{width:100%;height:100%;object-fit:cover;object-position:center 42%}
+.hero-visual:after{
+  content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(7,26,53,.74))
+}
+.hero-chip{
+  position:absolute;z-index:3;left:24px;right:24px;bottom:22px;padding:18px 20px;border-radius:20px;
+  color:#fff;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(18px)
+}
+.hero-chip small{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#ecd29e}
+.hero-chip b{display:block;font-size:21px;margin-top:7px;letter-spacing:-.02em}
+
+/* SHARED */
+section{padding:106px 0}
+.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:800}
+.section-head{max-width:890px;margin-bottom:48px}
+.section-head h2{
+  font-size:clamp(44px,5.3vw,78px);line-height:.98;letter-spacing:-.058em;margin:14px 0 18px
+}
+.section-head p{font-size:18px;line-height:1.72;color:var(--muted);max-width:800px;margin:0}
+.dark{background:var(--navy);color:#fff}
+.dark .section-head h2{color:#fff}
+.dark .section-head p{color:rgba(255,255,255,.68)}
+
+/* NUMBERS */
+.metrics{padding:24px 0 0}
+.metric-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.metric{
+  background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px
+}
+.metric strong{display:block;font-size:36px;color:var(--navy);letter-spacing:-.04em}
+.metric span{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#7a838e;margin-top:7px}
+
+/* FEATURED */
+.featured-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.feature{
+  border-radius:34px;background:#fff;border:1px solid var(--line);overflow:hidden
+}
+.feature-media{height:420px;background:#eef1f5;padding:18px}
+.feature-media img{width:100%;height:100%;object-fit:contain;object-position:center;border-radius:22px;background:#eef1f5}
+.feature-copy{padding:30px}
+.feature-copy .year{font-size:11px;letter-spacing:.16em;color:var(--gold);font-weight:800;text-transform:uppercase}
+.feature-copy h3{font-size:36px;line-height:1.02;letter-spacing:-.045em;color:var(--navy);margin:10px 0 13px}
+.feature-copy p{font-size:15px;line-height:1.7;color:var(--muted);margin:0}
+
+/* GALLERY */
+.gallery{background:#fff}
+.gallery-grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.award-card{
+  grid-column:span 4;border:1px solid var(--line);border-radius:28px;overflow:hidden;background:#f8f8f6
+}
+.award-card.wide{grid-column:span 6}
+.award-img{height:260px;padding:14px;background:#eef1f5}
+.award-img img{
+  width:100%;height:100%;object-fit:contain;object-position:center;background:#eef1f5;border-radius:18px
+}
+.award-body{padding:22px}
+.award-body small{font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);font-weight:800}
+.award-body h3{font-size:25px;line-height:1.08;letter-spacing:-.035em;color:var(--navy);margin:9px 0 10px}
+.award-body p{margin:0;font-size:14px;line-height:1.65;color:var(--muted)}
+
+/* TIMELINE */
+.timeline{background:var(--warm)}
+.timeline-list{border-top:1px solid #d9d4ca}
+.timeline-row{
+  display:grid;grid-template-columns:150px 1fr;gap:34px;padding:28px 0;border-bottom:1px solid #d9d4ca
+}
+.timeline-year{font-size:30px;color:var(--gold);letter-spacing:-.04em;font-weight:650}
+.timeline-row h3{font-size:24px;letter-spacing:-.035em;color:var(--navy);margin:0 0 7px}
+.timeline-row p{font-size:14px;line-height:1.7;color:#616b76;margin:0;max-width:760px}
+
+/* ARCHIVE */
+.archive{background:#fff}
+.archive-tools{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+.filter{
+  border:1px solid var(--line);background:#fff;border-radius:999px;padding:10px 14px;
+  color:#59616c;font-size:12px;font-weight:700;cursor:pointer
+}
+.filter.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+.archive-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.archive-item{
+  border:1px solid var(--line);border-radius:20px;background:#fafaf8;padding:18px;min-height:150px
+}
+.archive-item .num{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:800}
+.archive-item h4{font-size:16px;line-height:1.35;color:var(--navy);margin:9px 0 0;font-weight:700}
+.archive-item p{font-size:12px;line-height:1.55;color:var(--muted);margin:8px 0 0}
+.archive-item.hide{display:none}
+
+/* RECOGNITION THEMES */
+.themes-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.theme{
+  border-radius:26px;padding:28px;min-height:240px;background:rgba(255,255,255,.07);
+  border:1px solid rgba(255,255,255,.11)
+}
+.theme .icon{font-size:27px;color:var(--gold2)}
+.theme h3{font-size:22px;margin:28px 0 10px;color:#fff;letter-spacing:-.03em}
+.theme p{font-size:13px;line-height:1.65;color:rgba(255,255,255,.65);margin:0}
+
+/* CTA */
+.cta{padding:112px 0;text-align:center;background:linear-gradient(180deg,#f7f7f5,#ece8df)}
+.cta h2{font-size:clamp(48px,6vw,82px);line-height:.96;letter-spacing:-.055em;margin:14px auto 20px;max-width:900px}
+.cta p{font-size:18px;line-height:1.65;color:var(--muted);max-width:700px;margin:0 auto 30px}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.btn{padding:15px 22px;border-radius:14px;font-size:14px;font-weight:700}
+.btn.primary{background:var(--navy);color:#fff}
+.btn.secondary{background:#fff;border:1px solid var(--line);color:var(--navy)}
+
+footer{background:#071a35;color:rgba(255,255,255,.65);padding:46px 0}
+.foot{display:flex;justify-content:space-between;align-items:flex-end;gap:30px}
+.foot strong{display:block;color:#fff;font-family:Georgia,serif;font-size:20px;font-weight:500}
+.foot p{font-size:12px;line-height:1.65;margin:8px 0 0;max-width:510px}
+.foot .right{text-align:right}
+
+.reveal{opacity:0;transform:translateY(22px);transition:.72s cubic-bezier(.22,1,.36,1)}
+.reveal.show{opacity:1;transform:none}
+
+@media(max-width:1024px){
+  .links{display:none}
+  .hero-grid{grid-template-columns:1fr}.hero-visual{height:560px}
+  .metric-grid{grid-template-columns:1fr 1fr}
+  .featured-grid{grid-template-columns:1fr}
+  .award-card,.award-card.wide{grid-column:span 6}
+  .archive-grid{grid-template-columns:1fr 1fr}
+  .themes-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:720px){
+  .wrap{width:min(var(--max),calc(100% - 28px))}
+  .nav{height:68px}.brand{min-width:0}.brand strong{font-size:17px}.brand small,.book{display:none}
+  .hero{padding-top:48px}.hero-visual{height:470px;border-radius:28px}
+  section{padding:82px 0}
+  .metric-grid{grid-template-columns:1fr}
+  .feature-media{height:310px}.feature-copy h3{font-size:30px}
+  .award-card,.award-card.wide{grid-column:span 12}
+  .timeline-row{grid-template-columns:1fr;gap:10px}.timeline-year{font-size:24px}
+  .archive-grid{grid-template-columns:1fr}
+  .themes-grid{grid-template-columns:1fr}
+  .foot{flex-direction:column;align-items:flex-start}.foot .right{text-align:left}
+}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* Consistent navigation to all eight standalone pages. */
+.topbar .nav { gap:20px; }
+.topbar .links { gap:16px; font-size:13px; }
+.topbar .links a, .topbar .book, .topbar .nav-cta { white-space:nowrap; }
+.topbar .brand { min-width:0; flex-shrink:0; }
+.topbar .menu { display:none; background:none; border:0; color:var(--navy); min-width:44px; min-height:44px; align-items:center; justify-content:center; cursor:pointer; }
+.topbar .menu svg { width:24px; height:24px; }
+@media(max-width:1399px) {
+  .topbar .nav { position:relative; }
+  .topbar .links, .topbar .book, .topbar .nav-cta { display:none; }
+  .topbar .menu { display:flex; }
+  .topbar .links.is-open { display:flex; position:absolute; top:100%; right:0; left:0; flex-direction:column; align-items:stretch; gap:0; padding:12px 20px; max-height:calc(100dvh - 90px); overflow-y:auto; background:#FCFBF8; border:1px solid #E7E0D5; z-index:1000; }
+  .topbar .links.is-open a { padding:12px 0; font-size:15px; }
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <path d="M24 6C24 6 16 14 16 22C16 26.4 19.6 30 24 30C28.4 30 32 26.4 32 22C32 14 24 6 24 6Z" stroke="#B48A46" stroke-width="1.5"/>
+        <path d="M24 30V42M10 24C10 24 12 32 24 32C36 32 38 24 38 24" stroke="#B48A46" stroke-width="1.5"/>
+      </svg>
+      <span><strong>Dr. Mahaveer Mehta</strong><small>MEDICAL CENTER · DUBAI</small></span>
+    </a>
+    <nav class="links" id="page-navigation" aria-label="Primary"><a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="treatments.html">Treatments</a>
+<a href="technology.html">Technology</a>
+<a href="awards.html" class="active" aria-current="page">Awards</a>
+<a href="media-research.html">Media &amp; Research</a>
+<a href="clinic.html">Clinic</a>
+<a href="contact.html">Contact</a></nav>
+    <a class="book" href="contact.html">Book an Appointment</a>
+  <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="page-navigation"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.5"/></svg></button></div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <div class="kicker">Awards · Recognition · International Leadership</div>
+      <h1>Recognition,<br>built over<br>decades.</h1>
+      <p>From dermatology societies and international congresses to scientific leadership and philanthropic recognition, Dr. Mahaveer Mehta’s career archive reflects decades of professional contribution beyond the consultation room.</p>
+    </div>
+
+    <div class="hero-visual reveal">
+      <img src="images/dr-mahaveer-mehta-dermatologist-in-dubai-congress-ambassador-award.jpg" alt="Dr. Mahaveer Mehta receiving the Dubai Congress Ambassador Award">
+      <div class="hero-chip"><small>Featured recognition · Dubai</small><b>Dubai Congress Ambassador Award</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="metrics">
+  <div class="wrap metric-grid">
+    <div class="metric reveal"><strong>57</strong><span>Career archive entries listed on official profile</span></div>
+    <div class="metric reveal"><strong>2016</strong><span>DASIL Congress President · Dubai</span></div>
+    <div class="metric reveal"><strong>2013–16</strong><span>ICAAM Scientific Committee Chair</span></div>
+    <div class="metric reveal"><strong>25 yrs</strong><span>AAD Golden Pin · 1985–2010</span></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Featured recognition</div>
+      <h2>Two milestones.<br>One city.</h2>
+      <p>Dubai Congress Ambassador recognition appears twice in Dr. Mehta’s official awards archive, connected with his contribution to international medical congresses hosted in Dubai.</p>
+    </div>
+
+    <div class="featured-grid">
+      <article class="feature reveal">
+        <div class="feature-media">
+          <img src="images/dr-mahaveer-mehta-dermatologist-in-dubai-congress-ambassador-award.jpg" alt="Dubai Congress Ambassador Award 2020">
+        </div>
+        <div class="feature-copy">
+          <div class="year">2020 · Dubai Tourism</div>
+          <h3>Dubai Congress Ambassador Award</h3>
+          <p>The doctor’s official site describes the award as recognition from Dubai Tourism at an event attended by senior government and health officials, highlighting his contribution to international congress activity in Dubai.</p>
+        </div>
+      </article>
+
+      <article class="feature reveal">
+        <div class="feature-media">
+          <img src="images/dr-mahaveer-mehta-dermatologist-in-dubai-congress-ambassador-award-2016.jpg" alt="Dubai Congress Ambassador Award 2016">
+        </div>
+        <div class="feature-copy">
+          <div class="year">2016 · Dubai Tourism</div>
+          <h3>Congress recognition in Dubai</h3>
+          <p>The clinic’s official profile links this recognition to the successful DASIL World Congress of Dermatology held in Dubai under Dr. Mehta’s congress presidency.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Selected honors</div>
+      <h2>Awards with a story<br>behind each one.</h2>
+      <p>These images come from the doctor’s own official awards archive. Image areas use contained framing so medals, certificates and group photographs remain visible rather than being aggressively cropped.</p>
+    </div>
+
+    <div class="gallery-grid">
+      <article class="award-card wide reveal">
+        <div class="award-img"><img src="images/Dr.Mahaveermehtacongresspresidentdasireceivesoutstandingcontributionawardfororganisingworldcongressofdermatologyindubai.jpg" alt="DASIL Congress President recognition"></div>
+        <div class="award-body"><small>DASIL · 2016</small><h3>Congress President Medal & Award</h3><p>Recognition associated with his presidency of the Dermatologic & Aesthetic Surgery International League world conference in Dubai.</p></div>
+      </article>
+
+      <article class="award-card wide reveal">
+        <div class="award-img"><img src="images/img100-24rvcopy_1579758208.jpg" alt="ASDS outstanding contribution medal"></div>
+        <div class="award-body"><small>ASDS · International Mentorship</small><h3>Outstanding Contribution Medal</h3><p>Recognition related to the International Travelling Mentorship Program of the American Society for Dermatologic Surgery.</p></div>
+      </article>
+
+      <article class="award-card reveal">
+        <div class="award-img"><img src="images/drmahaveermehtadermatologistindubaiawardedoutstandingawardfororganisingseveralinternationalicaamdermatologyconferencesindubai.jpg" alt="ICAAM award and scientific leadership recognition"></div>
+        <div class="award-body"><small>ICAAM · 2013–2016</small><h3>Scientific Leadership Recognition</h3><p>Connected with chairing the scientific committee and helping organize multiple international aesthetics and anti-ageing medicine congresses.</p></div>
+      </article>
+
+      <article class="award-card reveal">
+        <div class="award-img"><img src="images/dr_mahaveermehtadermatologistindubaireceiveshighestawardindermatology.jpg" alt="International dermatology oration and medal award"></div>
+        <div class="award-body"><small>International</small><h3>Oration & Medal Award</h3><p>Recognition described by the clinic for service as chair, guest of honor and keynote speaker at an international aesthetic dermatology conference in India.</p></div>
+      </article>
+
+      <article class="award-card reveal">
+        <div class="award-img"><img src="images/img100-25rvcopy_1579758244.jpg" alt="American Academy of Dermatology appreciation plaque"></div>
+        <div class="award-body"><small>AAD · Philanthropy</small><h3>American Academy of Dermatology Plaque</h3><p>The official About page lists appreciation for sustained philanthropic support and service programs over many years.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="timeline">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Recognition timeline</div>
+      <h2>Selected moments<br>across the years.</h2>
+      <p>A concise timeline of important awards, appointments and professional milestones listed by Dr. Mehta’s official profile.</p>
+    </div>
+
+    <div class="timeline-list">
+      <div class="timeline-row reveal"><div class="timeline-year">2002–03</div><div><h3>Health & Family Award of Excellence</h3><p>Listed in the official awards archive as an early recognition milestone.</p></div></div>
+      <div class="timeline-row reveal"><div class="timeline-year">2005</div><div><h3>NRI of the Year Achiever Award</h3><p>Included among the doctor’s official career achievements.</p></div></div>
+      <div class="timeline-row reveal"><div class="timeline-year">2007</div><div><h3>Lifetime Achievement Award</h3><p>Recorded in the official About page’s numbered awards and achievements list.</p></div></div>
+      <div class="timeline-row reveal"><div class="timeline-year">2010</div><div><h3>Hind Rattan Award & AAD Golden Pin</h3><p>The profile lists the Hind Rattan Award and a special AAD Golden Pin commemorating 25 years of membership from 1985 to 2010.</p></div></div>
+      <div class="timeline-row reveal"><div class="timeline-year">2012</div><div><h3>DASIL Finance Committee Co-Chair</h3><p>Listed as first co-chair of the finance committee and a member of the organizing committee.</p></div></div>
+      <div class="timeline-row reveal"><div class="timeline-year">2013–16</div><div><h3>ICAAM Scientific Committee Chair</h3><p>Appointed chair of the scientific committee and faculty across multiple ICAAM congresses.</p></div></div>
+      <div class="timeline-row reveal"><div class="timeline-year">2016</div><div><h3>DASIL Congress President · Dubai</h3><p>Presided over the DASIL annual world conference in Dubai and received associated recognition.</p></div></div>
+      <div class="timeline-row reveal"><div class="timeline-year">2017–20</div><div><h3>AAD International Affairs</h3><p>The official profile lists appointment as a member of International Affairs at the American Academy of Dermatology.</p></div></div>
+      <div class="timeline-row reveal"><div class="timeline-year">2018</div><div><h3>DASIL Scientific Committee Co-Chair</h3><p>Listed as co-chair of the scientific committee for the DASIL world conference in Buenos Aires.</p></div></div>
+      <div class="timeline-row reveal"><div class="timeline-year">2019</div><div><h3>DASIL World Conference Co-Chair · Goa</h3><p>Listed as co-chair of the 8th World Conference of DASIL.</p></div></div>
+      <div class="timeline-row reveal"><div class="timeline-year">2020–23</div><div><h3>AAD Individual Giving Committee</h3><p>The official profile lists appointment to the American Academy of Dermatology Individual Giving Committee.</p></div></div>
+      <div class="timeline-row reveal"><div class="timeline-year">2022</div><div><h3>15-Year Philanthropic Recognition</h3><p>The profile records an American Academy of Dermatology plaque recognizing philanthropic programs and services from 2007 to 2022.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Beyond awards</div>
+      <h2>Recognition across<br>four dimensions.</h2>
+      <p>The archive extends beyond trophies: it includes scientific leadership, professional appointments, editorial responsibilities and philanthropic recognition.</p>
+    </div>
+    <div class="themes-grid">
+      <div class="theme reveal"><div class="icon">✦</div><h3>Professional Awards</h3><p>Medical, dermatologic and service recognition across several decades.</p></div>
+      <div class="theme reveal"><div class="icon">◎</div><h3>Congress Leadership</h3><p>Congress president, scientific chair, invited faculty, keynote speaker and conference co-chair roles.</p></div>
+      <div class="theme reveal"><div class="icon">▦</div><h3>Editorial Appointments</h3><p>Multiple editorial board roles and an editor-in-chief appointment listed on the official profile.</p></div>
+      <div class="theme reveal"><div class="icon">♡</div><h3>Philanthropy</h3><p>AAD, Rotary and charitable contribution recognition, including Paul Harris Fellow status.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="archive" id="archive">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Career recognition archive</div>
+      <h2>The broader record.</h2>
+      <p>The doctor’s official About page contains a numbered list of 57 awards, achievements and professional appointments. The archive below keeps that broader record visible without overwhelming the main visual story.</p>
+    </div>
+
+    <div class="archive-tools">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="award">Awards</button>
+      <button class="filter" data-filter="leadership">Leadership</button>
+      <button class="filter" data-filter="editorial">Editorial</button>
+      <button class="filter" data-filter="service">Service</button>
+    </div>
+
+    <div class="archive-grid" id="archiveGrid">
+      <div class="archive-item" data-cat="award"><span class="num">01</span><h4>Physician Recognition Award</h4><p>American Medical Association recognition, listed several times.</p></div>
+      <div class="archive-item" data-cat="award"><span class="num">02</span><h4>Continuing Medical Education Award</h4><p>American Academy of Dermatology, listed several times since 1985.</p></div>
+      <div class="archive-item" data-cat="service"><span class="num">03</span><h4>Lions Club International Service Award</h4></div>
+      <div class="archive-item" data-cat="service"><span class="num">04</span><h4>International Red Cross Service Award</h4></div>
+      <div class="archive-item" data-cat="award"><span class="num">05</span><h4>Golden Web Award</h4><p>Listed several times on the official profile.</p></div>
+      <div class="archive-item" data-cat="award"><span class="num">06</span><h4>Health & Family Award of Excellence 2002–2003</h4></div>
+      <div class="archive-item" data-cat="leadership"><span class="num">07</span><h4>Founding Partner · Dubai Healthcare City</h4></div>
+      <div class="archive-item" data-cat="leadership"><span class="num">08</span><h4>AAD Annual Meeting Evaluation Observer</h4><p>Nominated to assist the evaluation task force on three occasions.</p></div>
+      <div class="archive-item" data-cat="award"><span class="num">09</span><h4>NRI of the Year Achiever Award 2005</h4></div>
+      <div class="archive-item" data-cat="award"><span class="num">10</span><h4>Lifetime Achievement Award 2007</h4></div>
+      <div class="archive-item" data-cat="award"><span class="num">11</span><h4>ISO 9001 Quality Accreditation</h4></div>
+      <div class="archive-item" data-cat="service"><span class="num">12</span><h4>AAD Sustaining Member Patron 2008</h4></div>
+      <div class="archive-item" data-cat="award"><span class="num">13</span><h4>Hind Rattan Award 2010</h4></div>
+      <div class="archive-item" data-cat="leadership"><span class="num">14</span><h4>International Dermatology & Laser Congress Chairperson / Speaker</h4></div>
+      <div class="archive-item" data-cat="award"><span class="num">15</span><h4>AAD 25-Year Golden Pin</h4><p>Commemorating membership from 1985–2010.</p></div>
+      <div class="archive-item" data-cat="leadership"><span class="num">16</span><h4>ASDS International Mentor</h4><p>International Travelling Mentorship Program.</p></div>
+      <div class="archive-item" data-cat="award"><span class="num">17</span><h4>ISDS Golf Tournament Winner 2011</h4><p>7th International Society of Dermatologic Surgery tournament, Heidelberg.</p></div>
+      <div class="archive-item" data-cat="leadership"><span class="num">18</span><h4>DASIL Finance Committee Co-Chair 2012</h4></div>
+      <div class="archive-item" data-cat="service"><span class="num">19</span><h4>Paul Harris Fellow & Golden Paul Harris Pin</h4><p>Rotary Foundation / Rotary Club recognition for social contribution.</p></div>
+      <div class="archive-item" data-cat="award"><span class="num">20</span><h4>Hole-in-One · Dubai Creek Golf 2013</h4></div>
+      <div class="archive-item" data-cat="leadership"><span class="num">21</span><h4>ICAAM Scientific Committee Chair & Faculty</h4><p>2013, 2014, 2015 and 2016.</p></div>
+      <div class="archive-item" data-cat="leadership"><span class="num">22</span><h4>Gender Aesthetic Congress Asia 2014</h4><p>Invited chair, speaker and advisory committee member.</p></div>
+      <div class="archive-item" data-cat="leadership"><span class="num">23</span><h4>DASIL Board of Directors</h4></div>
+      <div class="archive-item" data-cat="leadership"><span class="num">24</span><h4>DASIL Congress President · Dubai 2016</h4></div>
+      <div class="archive-item" data-cat="editorial"><span class="num">25</span><h4>Editorial Board · Journal of Procedural Dermatology</h4></div>
+      <div class="archive-item" data-cat="editorial"><span class="num">26</span><h4>Editorial Board · Journal of Clinical & Cosmetic Dermatology</h4></div>
+      <div class="archive-item" data-cat="leadership"><span class="num">27</span><h4>AAD International Affairs Member 2017–2020</h4></div>
+      <div class="archive-item" data-cat="service"><span class="num">28</span><h4>AAD Philanthropic Dedication Plaque</h4><p>Recognition for sustained Academy support.</p></div>
+      <div class="archive-item" data-cat="leadership"><span class="num">29</span><h4>Dubai Creek Golf Club Consultative Committee 2017</h4></div>
+      <div class="archive-item" data-cat="award"><span class="num">30</span><h4>Plastic & Reconstructive Surgery Contribution Award 2017</h4><p>Arabia Plats international conference, Bahrain.</p></div>
+      <div class="archive-item" data-cat="award"><span class="num">31</span><h4>ASDS ITMP Outstanding Contribution Medal</h4></div>
+      <div class="archive-item" data-cat="award"><span class="num">32</span><h4>WCOCD 2017 Certificate & Plaque</h4><p>Invited faculty, live workshop and hands-on training.</p></div>
+      <div class="archive-item" data-cat="award"><span class="num">33</span><h4>DASIL Outstanding Contribution Medal 2016</h4></div>
+      <div class="archive-item" data-cat="editorial"><span class="num">34</span><h4>Editorial Board · Journal of Clinical Dermatology & Investigations</h4></div>
+      <div class="archive-item" data-cat="editorial"><span class="num">35</span><h4>Editorial Board · Journal of Case Reports & Literature Review</h4></div>
+      <div class="archive-item" data-cat="editorial"><span class="num">36</span><h4>Editorial Board · Journal of Cosmetic Dermatology (JCOS)</h4></div>
+      <div class="archive-item" data-cat="editorial"><span class="num">37</span><h4>Editorial Board · Journal of Clinical Research in Dermatology</h4></div>
+      <div class="archive-item" data-cat="editorial"><span class="num">38</span><h4>Executive Editor · Journal of Clinical Dermatology & Dermatitis</h4></div>
+      <div class="archive-item" data-cat="leadership"><span class="num">39</span><h4>DASIL Scientific Committee Co-Chair 2018 · Buenos Aires</h4></div>
+      <div class="archive-item" data-cat="award"><span class="num">40</span><h4>Medal, Guest of Honor & Conference Oration 2018</h4></div>
+      <div class="archive-item" data-cat="leadership"><span class="num">41</span><h4>International Clinical & Experimental Dermatology Conference 2018</h4><p>Chair, keynote speaker, organizing committee member and guest of honor.</p></div>
+      <div class="archive-item" data-cat="leadership"><span class="num">42</span><h4>DASIL 8th World Conference Co-Chair 2019 · Goa</h4></div>
+      <div class="archive-item" data-cat="service"><span class="num">43</span><h4>AAD Individual Giving Committee 2020–2023</h4></div>
+      <div class="archive-item" data-cat="editorial"><span class="num">44</span><h4>Editorial Board · Journal of Biomed Research</h4></div>
+      <div class="archive-item" data-cat="editorial"><span class="num">45</span><h4>Editorial Board · Journal of Dermatology & Surgical Therapy</h4></div>
+      <div class="archive-item" data-cat="editorial"><span class="num">46</span><h4>Editorial Board · Journal of Skincare & Cosmetic Surgery</h4></div>
+      <div class="archive-item" data-cat="editorial"><span class="num">47</span><h4>Editorial Board · Journal of Medical Case Reports & Case Series</h4></div>
+      <div class="archive-item" data-cat="editorial"><span class="num">48</span><h4>Editorial Board · Journal of Clinical Medical Reviews & Reports</h4></div>
+      <div class="archive-item" data-cat="editorial"><span class="num">49</span><h4>Editorial Board · Journal of Medical Care Research & Review</h4></div>
+      <div class="archive-item" data-cat="leadership"><span class="num">50</span><h4>Mentor · Education, Healthcare & Social Infrastructure Group</h4></div>
+      <div class="archive-item" data-cat="editorial"><span class="num">51</span><h4>Editorial Board · International Science World Journal of Skin Diseases & Venerology</h4></div>
+      <div class="archive-item" data-cat="editorial"><span class="num">52</span><h4>Editor-in-Chief · International Journal of Dermatology & Allergy Research</h4></div>
+      <div class="archive-item" data-cat="editorial"><span class="num">53</span><h4>Editorial Board · Madridge Journal of Dermatology</h4></div>
+      <div class="archive-item" data-cat="editorial"><span class="num">54</span><h4>Editorial Board · Japan Journal of Clinical & Medical Research</h4></div>
+      <div class="archive-item" data-cat="editorial"><span class="num">55</span><h4>Editorial Board · Journal of Clinical Dermatology & Cosmetics</h4></div>
+      <div class="archive-item" data-cat="award"><span class="num">56</span><h4>Excellence Certificate in Reviewing</h4><p>Asian Journal of Research in Dermatological Science.</p></div>
+      <div class="archive-item" data-cat="service"><span class="num">57</span><h4>AAD 15-Year Philanthropic Plaque</h4><p>Recognition listed for philanthropic programs and services from 2007 to 2022.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="wrap reveal">
+    <div class="eyebrow">Dr. Mahaveer Mehta Medical Center · Dubai</div>
+    <h2>Experience, recognition and patient care.</h2>
+    <p>Contact the clinic in Dubai to arrange a consultation or ask about dermatology and laser treatment options.</p>
+    <div class="actions">
+      <a class="btn primary" href="tel:+97142282444">Call +971 4 228 2444</a>
+      <a class="btn secondary" href="https://wa.me/971508446333" target="_blank" rel="noopener">WhatsApp +971 50 844 6333</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><strong>Dr. Mahaveer Mehta Medical Center</strong><p>641-B, Al Ghurair Centre, Dubai, United Arab Emirates<br>drmmehta@emirates.net.ae</p></div>
+    <div class="right"><p>Awards and appointments summarized from Dr. Mahaveer Mehta’s official clinic website and career profile.</p></div>
+  </div>
+</footer>
+
+<script>
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){entry.target.classList.add('show');observer.unobserve(entry.target)}
+  })
+},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+document.querySelectorAll('.filter').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    const f=btn.dataset.filter;
+    document.querySelectorAll('.archive-item').forEach(item=>{
+      item.classList.toggle('hide', f!=='all' && item.dataset.cat!==f);
+    });
+  });
+});
+</script>
+<script>
+(function(){
+ var button=document.querySelector('.topbar .menu'), menu=document.getElementById('page-navigation');
+ if(!button||!menu)return;
+ function close(){menu.classList.remove('is-open');button.setAttribute('aria-expanded','false');}
+ button.addEventListener('click',function(){var open=menu.classList.toggle('is-open');button.setAttribute('aria-expanded',String(open));});
+ menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape'){close();button.focus();}});
+ document.addEventListener('click',function(e){if(!menu.contains(e.target)&&!button.contains(e.target))close();});
+ window.addEventListener('resize',function(){if(window.innerWidth>1399)close();});
+})();
+</script>
+</body>
+</html>

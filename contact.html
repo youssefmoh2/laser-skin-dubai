@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact & Book Appointment | Dr. Mahaveer Mehta Medical Center</title>
+<meta name="description" content="Contact Dr. Mahaveer Mehta Medical Center in Dubai. Call, WhatsApp, email, get directions, or send an appointment request.">
+<style>
+:root{
+  --navy:#0a1f3e;--navy2:#133a67;--navy3:#071a35;--ink:#0d1a2b;
+  --gold:#b58a45;--gold2:#d4b577;--paper:#f7f7f5;--warm:#efebe3;
+  --white:#fff;--line:#e5e3df;--muted:#69727e;--max:1240px
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Segoe UI",Arial,sans-serif;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden
+}
+a{text-decoration:none;color:inherit}
+button,input,select,textarea{font:inherit}
+.wrap{width:min(var(--max),calc(100% - 48px));margin:auto}
+
+/* NAV */
+.topbar{
+  position:sticky;top:0;z-index:100;background:rgba(247,247,245,.82);
+  backdrop-filter:saturate(180%) blur(24px);border-bottom:1px solid rgba(10,31,62,.07)
+}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+.brand{display:flex;align-items:center;gap:12px;min-width:280px}
+.brand svg{width:42px;height:42px}
+.brand strong{display:block;font-family:Georgia,serif;font-size:20px;font-weight:500;color:var(--navy)}
+.brand small{display:block;font-size:9px;letter-spacing:.22em;color:var(--gold);margin-top:3px}
+.links{display:flex;gap:24px;align-items:center;font-size:14px;color:#333d49}
+.links a{padding:28px 0 24px;border-bottom:2px solid transparent}
+.links a.active{color:var(--navy);border-color:var(--gold)}
+.nav-cta{background:var(--navy);color:#fff;padding:13px 20px;border-radius:14px;font-size:14px;font-weight:700}
+
+/* HERO */
+.hero{padding:82px 0 58px}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:46px;align-items:center}
+.kicker{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:800}
+h1{
+  margin:22px 0 28px;font-size:clamp(60px,7.2vw,108px);line-height:.95;
+  letter-spacing:-.065em;font-weight:650
+}
+.hero-copy{
+  margin:0;max-width:720px;color:#55606e;font-size:clamp(18px,2vw,27px);
+  line-height:1.5;letter-spacing:-.02em
+}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:15px 22px;border-radius:14px;font-size:14px;font-weight:700;border:0;cursor:pointer
+}
+.btn.primary{background:var(--navy);color:#fff}
+.btn.secondary{background:#fff;border:1px solid var(--line);color:var(--navy)}
+.btn.gold{background:var(--gold);color:#fff}
+
+.hero-visual{
+  height:680px;border-radius:40px;overflow:hidden;position:relative;
+  background:
+    radial-gradient(circle at 78% 18%,rgba(212,181,119,.32),transparent 24%),
+    linear-gradient(145deg,#071a35,#0d2d57 53%,#174878);
+  box-shadow:0 38px 100px rgba(10,31,62,.16)
+}
+.hero-visual:before{
+  content:"";position:absolute;inset:0;background:
+  linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+  background-size:42px 42px
+}
+.contact-orbit{
+  position:absolute;left:50%;top:43%;transform:translate(-50%,-50%);
+  width:380px;height:380px;border-radius:50%;border:1px solid rgba(255,255,255,.15)
+}
+.contact-orbit:before,.contact-orbit:after{
+  content:"";position:absolute;border-radius:50%;border:1px solid rgba(255,255,255,.1)
+}
+.contact-orbit:before{inset:52px}
+.contact-orbit:after{inset:110px}
+.contact-center{
+  position:absolute;left:50%;top:43%;transform:translate(-50%,-50%);
+  width:124px;height:124px;border-radius:34px;background:linear-gradient(145deg,#fff,#dce4ec);
+  display:grid;place-items:center;box-shadow:0 30px 70px rgba(0,0,0,.28)
+}
+.contact-center svg{width:54px;height:54px}
+.float-card{
+  position:absolute;padding:14px 16px;border-radius:18px;background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.17);backdrop-filter:blur(18px);color:#fff
+}
+.float-card small{display:block;font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:#ecd29e}
+.float-card b{display:block;margin-top:5px;font-size:14px}
+.f1{left:7%;top:18%}.f2{right:7%;top:26%}.f3{left:11%;bottom:22%}.f4{right:8%;bottom:19%}
+.hero-chip{
+  position:absolute;left:24px;right:24px;bottom:22px;padding:18px 20px;border-radius:20px;
+  background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(18px);color:#fff
+}
+.hero-chip small{display:block;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#ecd29e}
+.hero-chip b{display:block;margin-top:7px;font-size:21px;letter-spacing:-.02em}
+
+/* SHARED */
+section{padding:106px 0}
+.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:800}
+.section-head{max-width:900px;margin-bottom:48px}
+.section-head h2{
+  font-size:clamp(44px,5.3vw,78px);line-height:.98;letter-spacing:-.058em;margin:14px 0 18px
+}
+.section-head p{font-size:18px;line-height:1.72;color:var(--muted);max-width:800px;margin:0}
+
+/* CONTACT OPTIONS */
+.quick{padding:24px 0 0}
+.quick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.quick-card{
+  background:#fff;border:1px solid var(--line);border-radius:24px;padding:23px;
+  transition:.28s ease;min-height:175px
+}
+.quick-card:hover{transform:translateY(-3px);box-shadow:0 18px 42px rgba(10,31,62,.08)}
+.quick-icon{
+  width:46px;height:46px;border-radius:15px;background:#f6f4ef;border:1px solid var(--line);
+  display:grid;place-items:center;color:var(--gold);font-weight:800
+}
+.quick-card small{display:block;margin-top:23px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#8a929b}
+.quick-card b{display:block;margin-top:7px;font-size:17px;line-height:1.4;color:var(--navy)}
+
+/* BOOKING FORM */
+.booking{background:#fff}
+.booking-grid{display:grid;grid-template-columns:.86fr 1.14fr;gap:22px;align-items:start}
+.booking-copy{
+  min-height:720px;border-radius:34px;padding:42px;
+  background:linear-gradient(145deg,#071a35,#0f3764 55%,#1a4b7e);color:#fff;
+  display:flex;flex-direction:column;justify-content:space-between
+}
+.booking-copy h2{
+  font-size:clamp(46px,5vw,74px);line-height:.96;letter-spacing:-.055em;margin:14px 0 20px
+}
+.booking-copy p{font-size:16px;line-height:1.75;color:rgba(255,255,255,.69);max-width:570px;margin:0}
+.booking-points{margin-top:40px}
+.booking-point{padding:18px 0;border-top:1px solid rgba(255,255,255,.13)}
+.booking-point span{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2)}
+.booking-point b{display:block;margin-top:7px;font-size:17px;font-weight:650}
+.booking-note{font-size:12px;line-height:1.6;color:rgba(255,255,255,.52);margin-top:24px}
+
+.form-card{border:1px solid var(--line);border-radius:34px;padding:36px;background:#fafaf8}
+.form-card h3{font-size:36px;line-height:1;letter-spacing:-.045em;color:var(--navy);margin:0 0 8px}
+.form-card>p{font-size:13px;line-height:1.6;color:var(--muted);margin:0 0 28px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:flex;flex-direction:column;gap:8px}
+.field.full{grid-column:1/-1}
+label{font-size:11px;font-weight:750;letter-spacing:.08em;text-transform:uppercase;color:#58616c}
+input,select,textarea{
+  width:100%;border:1px solid #dcdad4;background:#fff;border-radius:14px;
+  padding:14px 15px;color:var(--ink);outline:none;transition:.2s ease
+}
+textarea{min-height:128px;resize:vertical}
+input:focus,select:focus,textarea:focus{
+  border-color:#b58a45;box-shadow:0 0 0 3px rgba(181,138,69,.1)
+}
+.form-help{font-size:11px;line-height:1.55;color:#8a919a;margin:12px 0 0}
+.form-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.success{
+  display:none;margin-top:16px;border:1px solid #dfe4db;background:#f3f8f1;color:#36533b;
+  padding:13px 15px;border-radius:14px;font-size:13px;line-height:1.5
+}
+.success.show{display:block}
+
+/* LOCATION */
+.location{background:var(--warm)}
+.location-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:20px}
+.map{
+  min-height:600px;border-radius:34px;position:relative;overflow:hidden;
+  background:
+    linear-gradient(35deg,transparent 48%,rgba(10,31,62,.08) 49%,rgba(10,31,62,.08) 51%,transparent 52%),
+    linear-gradient(-35deg,transparent 48%,rgba(10,31,62,.06) 49%,rgba(10,31,62,.06) 51%,transparent 52%),
+    #e4e8e6;
+  background-size:120px 120px,160px 160px,auto
+}
+.map:before{
+  content:"";position:absolute;left:18%;top:12%;width:32%;height:70%;border-radius:40%;
+  border:20px solid rgba(255,255,255,.68);transform:rotate(18deg)
+}
+.map:after{
+  content:"";position:absolute;right:6%;bottom:10%;width:45%;height:40%;border-radius:50%;
+  background:#ccd7cf;opacity:.72
+}
+.pin{
+  position:absolute;z-index:3;left:53%;top:42%;width:68px;height:68px;border-radius:50% 50% 50% 0;
+  background:var(--navy);rotate:-45deg;box-shadow:0 20px 40px rgba(10,31,62,.22)
+}
+.pin:after{content:"";position:absolute;width:22px;height:22px;border-radius:50%;background:var(--gold2);left:23px;top:23px}
+.map-label{
+  position:absolute;z-index:4;left:30px;right:30px;bottom:28px;padding:20px 22px;border-radius:20px;
+  background:rgba(255,255,255,.86);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.95)
+}
+.map-label small{display:block;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);font-weight:800}
+.map-label b{display:block;font-size:22px;letter-spacing:-.025em;color:var(--navy);margin-top:8px}
+
+.location-card{background:#fff;border:1px solid #ddd9d0;border-radius:34px;padding:36px}
+.location-card h3{font-size:40px;line-height:1;letter-spacing:-.05em;color:var(--navy);margin:12px 0 22px}
+.info-row{padding:18px 0;border-top:1px solid var(--line)}
+.info-row span{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);font-weight:800}
+.info-row b{display:block;margin-top:7px;color:var(--navy);font-size:17px;line-height:1.45}
+.location-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+
+/* FAQ */
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.faq{
+  border:1px solid var(--line);border-radius:24px;background:#fff;padding:26px
+}
+.faq h3{font-size:21px;line-height:1.2;letter-spacing:-.03em;color:var(--navy);margin:0 0 10px}
+.faq p{font-size:13px;line-height:1.7;color:var(--muted);margin:0}
+
+/* CTA */
+.cta{text-align:center;padding:112px 0;background:linear-gradient(180deg,#f7f7f5,#ebe7de)}
+.cta h2{font-size:clamp(48px,6vw,82px);line-height:.96;letter-spacing:-.055em;margin:14px auto 20px;max-width:900px}
+.cta p{font-size:18px;line-height:1.65;color:var(--muted);max-width:690px;margin:0 auto 30px}
+.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+
+footer{background:var(--navy3);color:rgba(255,255,255,.65);padding:46px 0}
+.foot{display:flex;justify-content:space-between;gap:30px;align-items:flex-end}
+.foot strong{display:block;color:#fff;font-family:Georgia,serif;font-size:20px;font-weight:500}
+.foot p{font-size:12px;line-height:1.65;margin:8px 0 0;max-width:540px}
+.foot .right{text-align:right}
+
+.reveal{opacity:0;transform:translateY(22px);transition:.72s cubic-bezier(.22,1,.36,1)}
+.reveal.show{opacity:1;transform:none}
+
+@media(max-width:1024px){
+  .links{display:none}
+  .hero-grid,.booking-grid,.location-grid{grid-template-columns:1fr}
+  .hero-visual{height:560px}
+  .quick-grid{grid-template-columns:1fr 1fr}
+  .booking-copy{min-height:520px}
+}
+@media(max-width:720px){
+  .wrap{width:min(var(--max),calc(100% - 28px))}
+  .nav{height:68px}.brand{min-width:0}.brand strong{font-size:17px}.brand small,.nav-cta{display:none}
+  .hero{padding-top:48px}.hero-visual{height:470px;border-radius:28px}
+  .contact-orbit{transform:translate(-50%,-50%) scale(.78)}
+  .float-card{font-size:11px}.f2,.f4{right:4%}.f1,.f3{left:4%}
+  section{padding:82px 0}
+  .quick-grid,.form-grid,.faq-grid{grid-template-columns:1fr}
+  .field.full{grid-column:auto}
+  .booking-copy,.form-card,.location-card{padding:28px}
+  .map{min-height:440px}
+  .foot{flex-direction:column;align-items:flex-start}.foot .right{text-align:left}
+}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* Consistent navigation to all eight standalone pages. */
+.topbar .nav { gap:20px; }
+.topbar .links { gap:16px; font-size:13px; }
+.topbar .links a, .topbar .book, .topbar .nav-cta { white-space:nowrap; }
+.topbar .brand { min-width:0; flex-shrink:0; }
+.topbar .menu { display:none; background:none; border:0; color:var(--navy); min-width:44px; min-height:44px; align-items:center; justify-content:center; cursor:pointer; }
+.topbar .menu svg { width:24px; height:24px; }
+@media(max-width:1399px) {
+  .topbar .nav { position:relative; }
+  .topbar .links, .topbar .book, .topbar .nav-cta { display:none; }
+  .topbar .menu { display:flex; }
+  .topbar .links.is-open { display:flex; position:absolute; top:100%; right:0; left:0; flex-direction:column; align-items:stretch; gap:0; padding:12px 20px; max-height:calc(100dvh - 90px); overflow-y:auto; background:#FCFBF8; border:1px solid #E7E0D5; z-index:1000; }
+  .topbar .links.is-open a { padding:12px 0; font-size:15px; }
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <path d="M24 6C24 6 16 14 16 22C16 26.4 19.6 30 24 30C28.4 30 32 26.4 32 22C32 14 24 6 24 6Z" stroke="#B48A46" stroke-width="1.5"/>
+        <path d="M24 30V42M10 24C10 24 12 32 24 32C36 32 38 24 38 24" stroke="#B48A46" stroke-width="1.5"/>
+      </svg>
+      <span><strong>Dr. Mahaveer Mehta</strong><small>MEDICAL CENTER · DUBAI</small></span>
+    </a>
+
+    <nav class="links" id="page-navigation" aria-label="Primary"><a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="treatments.html">Treatments</a>
+<a href="technology.html">Technology</a>
+<a href="awards.html">Awards</a>
+<a href="media-research.html">Media &amp; Research</a>
+<a href="clinic.html">Clinic</a>
+<a href="contact.html" class="active" aria-current="page">Contact</a></nav>
+
+    <a class="nav-cta" href="#book">Book an Appointment</a>
+  <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="page-navigation"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.5"/></svg></button></div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <div class="kicker">Contact · Appointments · Dubai</div>
+      <h1>Start with<br>a conversation.</h1>
+      <p class="hero-copy">Call, WhatsApp, email or send an appointment request to Dr. Mahaveer Mehta Medical Center in Dubai.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#book">Book an Appointment</a>
+        <a class="btn secondary" href="https://wa.me/971508446333" target="_blank" rel="noopener">WhatsApp the Clinic</a>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal" aria-label="Contact options">
+      <div class="contact-orbit"></div>
+      <div class="contact-center">
+        <svg viewBox="0 0 48 48" fill="none">
+          <path d="M14 10H34C36.2 10 38 11.8 38 14V29C38 31.2 36.2 33 34 33H24L17 39V33H14C11.8 33 10 31.2 10 29V14C10 11.8 11.8 10 14 10Z" stroke="#0A1F3E" stroke-width="2"/>
+          <path d="M17 18H31M17 24H27" stroke="#B58A45" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="float-card f1"><small>Phone</small><b>+971 4 228 2444</b></div>
+      <div class="float-card f2"><small>WhatsApp</small><b>+971 50 844 6333</b></div>
+      <div class="float-card f3"><small>Email</small><b>drmmehta@emirates.net.ae</b></div>
+      <div class="float-card f4"><small>Location</small><b>Al Ghurair Centre</b></div>
+      <div class="hero-chip"><small>Dr. Mahaveer Mehta Medical Center</small><b>641-B, Al Ghurair Centre, Dubai</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="quick">
+  <div class="wrap quick-grid">
+    <a class="quick-card reveal" href="tel:+97142282444">
+      <div class="quick-icon">01</div><small>Call</small><b>+971 4 228 2444</b>
+    </a>
+    <a class="quick-card reveal" href="https://wa.me/971508446333" target="_blank" rel="noopener">
+      <div class="quick-icon">02</div><small>WhatsApp</small><b>+971 50 844 6333</b>
+    </a>
+    <a class="quick-card reveal" href="mailto:drmmehta@emirates.net.ae">
+      <div class="quick-icon">03</div><small>Email</small><b>drmmehta@emirates.net.ae</b>
+    </a>
+    <a class="quick-card reveal" href="https://www.google.com/maps/search/?api=1&query=Dr.+Mahaveer+Mehta+Medical+Center+Al+Ghurair+Centre+Dubai" target="_blank" rel="noopener">
+      <div class="quick-icon">04</div><small>Directions</small><b>641-B, Al Ghurair Centre</b>
+    </a>
+  </div>
+</section>
+
+<section class="booking" id="book">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Appointment request</div>
+      <h2>Tell the clinic<br>what you need.</h2>
+      <p>Use the form to prepare your appointment request. When you submit, the details will open in WhatsApp so you can send them directly to the clinic.</p>
+    </div>
+
+    <div class="booking-grid">
+      <aside class="booking-copy reveal">
+        <div>
+          <div class="eyebrow">Before you send</div>
+          <h2>Keep it simple.</h2>
+          <p>A few details are usually enough to help the clinic understand your request and respond appropriately.</p>
+
+          <div class="booking-points">
+            <div class="booking-point"><span>01 · Your details</span><b>Name and preferred contact number</b></div>
+            <div class="booking-point"><span>02 · Your concern</span><b>Choose the main reason for your visit</b></div>
+            <div class="booking-point"><span>03 · Timing</span><b>Share your preferred date or general availability</b></div>
+            <div class="booking-point"><span>04 · Additional context</span><b>Add a short note if useful</b></div>
+          </div>
+        </div>
+        <div class="booking-note">Submitting this form does not create a confirmed medical appointment. The clinic will need to respond and confirm availability.</div>
+      </aside>
+
+      <form class="form-card reveal" id="appointmentForm">
+        <h3>Request an appointment.</h3>
+        <p>No account needed. Your details are prepared for WhatsApp and are not stored by this page.</p>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone / WhatsApp</label>
+            <input id="phone" name="phone" type="tel" placeholder="+971 ..." required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="name@example.com">
+          </div>
+
+          <div class="field">
+            <label for="country">Country</label>
+            <input id="country" name="country" type="text" placeholder="Country of residence">
+          </div>
+
+          <div class="field">
+            <label for="concern">Main concern</label>
+            <select id="concern" name="concern" required>
+              <option value="">Select a concern</option>
+              <option>Acne / Acne Scars</option>
+              <option>Pigmentation / Melasma</option>
+              <option>Rosacea / Redness</option>
+              <option>Vitiligo / Psoriasis</option>
+              <option>Skin Rejuvenation</option>
+              <option>Laser Hair Reduction</option>
+              <option>Hair Loss</option>
+              <option>Moles / Skin Cancer Screening</option>
+              <option>Tattoo Removal</option>
+              <option>Other Dermatology Concern</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="date">Preferred date</label>
+            <input id="date" name="date" type="date">
+          </div>
+
+          <div class="field full">
+            <label for="message">Short note</label>
+            <textarea id="message" name="message" placeholder="Briefly describe your concern or preferred availability"></textarea>
+          </div>
+        </div>
+
+        <div class="form-help">Please do not include highly sensitive medical details in this general contact form. Those are better discussed directly with the clinic.</div>
+
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Send via WhatsApp</button>
+          <a class="btn secondary" href="tel:+97142282444">Call Instead</a>
+        </div>
+
+        <div class="success" id="successMsg">Your appointment request has been prepared. WhatsApp should open in a new window so you can send it to the clinic.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="location">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Find the clinic</div>
+      <h2>Located in Dubai.</h2>
+      <p>The clinic’s official contact details list 641-B, Al Ghurair Centre, Dubai, United Arab Emirates.</p>
+    </div>
+
+    <div class="location-grid">
+      <div class="map reveal" aria-label="Stylized map showing the clinic location">
+        <div class="pin"></div>
+        <div class="map-label"><small>Dr. Mahaveer Mehta Medical Center</small><b>641-B, Al Ghurair Centre, Dubai</b></div>
+      </div>
+
+      <div class="location-card reveal">
+        <div class="eyebrow">Contact details</div>
+        <h3>Everything in one place.</h3>
+
+        <div class="info-row"><span>Address</span><b>641-B, Al Ghurair Centre<br>Dubai, United Arab Emirates</b></div>
+        <div class="info-row"><span>Phone</span><b><a href="tel:+97142282444">+971 4 228 2444</a></b></div>
+        <div class="info-row"><span>WhatsApp</span><b><a href="https://wa.me/971508446333" target="_blank" rel="noopener">+971 50 844 6333</a></b></div>
+        <div class="info-row"><span>Email</span><b><a href="mailto:drmmehta@emirates.net.ae">drmmehta@emirates.net.ae</a></b></div>
+
+        <div class="location-actions">
+          <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=Dr.+Mahaveer+Mehta+Medical+Center+Al+Ghurair+Centre+Dubai" target="_blank" rel="noopener">Get Directions</a>
+          <a class="btn secondary" href="https://wa.me/971508446333" target="_blank" rel="noopener">WhatsApp Clinic</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">Good to know</div>
+      <h2>Before you contact<br>the clinic.</h2>
+    </div>
+
+    <div class="faq-grid">
+      <article class="faq reveal"><h3>Is this form a confirmed appointment?</h3><p>No. It prepares an appointment request for WhatsApp. The clinic must confirm the date and time directly.</p></article>
+      <article class="faq reveal"><h3>Can I send photos?</h3><p>Use WhatsApp or another clinic-approved channel if the clinic requests images. Avoid sending sensitive material unless necessary and appropriate.</p></article>
+      <article class="faq reveal"><h3>Can I ask about a specific laser?</h3><p>Yes, but the final technology or treatment choice should follow medical assessment and suitability.</p></article>
+      <article class="faq reveal"><h3>What if I am outside the UAE?</h3><p>You can still contact the clinic by WhatsApp, phone or email to ask about appointment options and planning your visit.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap reveal">
+    <div class="eyebrow">Dr. Mahaveer Mehta Medical Center · Dubai</div>
+    <h2>Ready when you are.</h2>
+    <p>Choose the contact method that works best for you and speak directly with the clinic.</p>
+    <div class="actions">
+      <a class="btn primary" href="tel:+97142282444">Call +971 4 228 2444</a>
+      <a class="btn secondary" href="https://wa.me/971508446333" target="_blank" rel="noopener">WhatsApp +971 50 844 6333</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <strong>Dr. Mahaveer Mehta Medical Center</strong>
+      <p>641-B, Al Ghurair Centre, Dubai, United Arab Emirates<br>drmmehta@emirates.net.ae</p>
+    </div>
+    <div class="right"><p>Contact information based on the clinic’s official website. Appointment requests require confirmation from the clinic.</p></div>
+  </div>
+</footer>
+
+<script>
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){entry.target.classList.add('show');observer.unobserve(entry.target)}
+  })
+},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+document.getElementById('appointmentForm').addEventListener('submit',function(e){
+  e.preventDefault();
+
+  const name=document.getElementById('name').value.trim();
+  const phone=document.getElementById('phone').value.trim();
+  const email=document.getElementById('email').value.trim();
+  const country=document.getElementById('country').value.trim();
+  const concern=document.getElementById('concern').value;
+  const date=document.getElementById('date').value;
+  const message=document.getElementById('message').value.trim();
+
+  const text=
+`Hello Dr. Mahaveer Mehta Medical Center,
+
+I would like to request an appointment.
+
+Name: ${name}
+Phone / WhatsApp: ${phone}
+Email: ${email || '-'}
+Country: ${country || '-'}
+Main concern: ${concern}
+Preferred date: ${date || 'Flexible'}
+
+Additional note:
+${message || '-'}
+
+Please let me know the available appointment options.`;
+
+  const url='https://wa.me/971508446333?text='+encodeURIComponent(text);
+  document.getElementById('successMsg').classList.add('show');
+  window.open(url,'_blank','noopener');
+});
+</script>
+<script>
+(function(){
+ var button=document.querySelector('.topbar .menu'), menu=document.getElementById('page-navigation');
+ if(!button||!menu)return;
+ function close(){menu.classList.remove('is-open');button.setAttribute('aria-expanded','false');}
+ button.addEventListener('click',function(){var open=menu.classList.toggle('is-open');button.setAttribute('aria-expanded',String(open));});
+ menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape'){close();button.focus();}});
+ document.addEventListener('click',function(e){if(!menu.contains(e.target)&&!button.contains(e.target))close();});
+ window.addEventListener('resize',function(){if(window.innerWidth>1399)close();});
+})();
+</script>
+</body>
+</html>
